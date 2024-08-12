@@ -60,6 +60,17 @@ body {
     border: 1px solid var(--primary-black)!important;
 }
 
+/* -------------------------------- Footer */
+.footer {
+    background-color: var(--primary-black); 
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
