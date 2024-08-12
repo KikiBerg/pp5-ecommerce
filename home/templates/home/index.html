@@ -1,6 +1,29 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-    <h1 class="display-4 text-success">Testing if it works</h1>
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 {% endblock %}
+
+{% block content %}
+<div class="container h-100">
+    <div class="position-relative">
+        <div class="row h-100">
+            <video class="w-100" autoplay loop muted>
+                <source src="{% static '#' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-black">
+                <h2 class="display-4 logo-font text-black">QUALITY SEEDS SINCE 1986</h2>
+                <a href="#" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Make you order now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

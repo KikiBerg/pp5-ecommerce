@@ -44,29 +44,74 @@
 </head>
 
 
-<body class="d-flex flex-column h-100 bg-light">
+<body>
 
     <!-- Header-->
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid fixed-top">
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <p class="mb-0">Free shipping on seeds from $50</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h1 class="mb-0">Seed & Sprout</h1>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <a href="#" class="me-2">Login</a>
+                        <a href="#" class="me-2">Favorites</a>
+                        <a href="#" class="me-2">Basket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-header">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
 
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
-    
-    {% block page_header %}    
+
+    {% block page_header %}
     {% endblock %}
 
     <!-- Main Content-->
+    {% block content %}
+    {% endblock %}
 
-    <main class="flex-grow-1 bg-white">
-        {% block content %}
-        {% endblock %}
-    </main>
 
 
 
     <!-- Footer-->
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">           
+
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p>Email: info@seedandsprout.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="me-2">Facebook</a>
+                    <a href="#" class="me-2">Twitter</a>
+                    <a href="#" class="me-2">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     {% block postloadjs %}
