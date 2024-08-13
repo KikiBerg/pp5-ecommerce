@@ -11,7 +11,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: white;
-    font-family: "Playfair Display", serif;
+    font-family: "Reddit Mono", monospace;
 }
 
 /* from Bulma */
