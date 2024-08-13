@@ -1,7 +1,18 @@
 :root {
     --primary-black: #2D2A1B;
     --primary-offwhite: #fdf9ec;
-  }
+    --primary-orange: #E9995C;
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --btn-box-shadow: box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 html {
     height: 100%;
@@ -41,6 +52,7 @@ body {
 .btn-black {
     background: var(--primary-black);
     color: white;
+    box-shadow: var(--btn-box-shadow);
 }
 
 .shop-now-button:hover,
@@ -58,11 +70,12 @@ body {
 }
 
 .border-black {
-    border: 1px solid var(--primary-black)!important;
+    border: 1px solid var(--primary-black) !important;
 }
 
 .bg-offwhite {
     background: var(--primary-offwhite);
+    border: 1px solid var(--primary-black);
 }
 
 /* -------------------------------- Search Form */
@@ -70,10 +83,12 @@ body {
     border-radius: 25px;
     overflow: hidden;
 }
+
 .rounded-search .form-control {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
+
 .rounded-search .input-group-append .btn {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -81,12 +96,36 @@ body {
 
 /* -------------------------------- Footer */
 .footer {
-    background-color: var(--primary-black); 
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: var(--primary-black);
+    color: var(--primary-offwhite);
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-black);
+    color: var(--primary-offwhite);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-orange);
 }
 
 
@@ -94,9 +133,9 @@ body {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -113,5 +152,16 @@ body {
         padding-top: 164px;
     }
 
-    
+
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
