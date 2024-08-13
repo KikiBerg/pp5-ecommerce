@@ -37,6 +37,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .main-logo-link {
@@ -92,6 +93,14 @@ body {
 .rounded-search .input-group-append .btn {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+/* -------------------------------- Navigation */
+.nav-item.dropdown > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
 }
 
 /* -------------------------------- Footer */
