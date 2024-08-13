@@ -1,5 +1,6 @@
 :root {
-    --primary-black: #1d1a11;
+    --primary-black: #2D2A1B;
+    --primary-offwhite: #fdf9ec;
   }
 
 html {
@@ -60,6 +61,24 @@ body {
     border: 1px solid var(--primary-black)!important;
 }
 
+.bg-offwhite {
+    background: var(--primary-offwhite);
+}
+
+/* -------------------------------- Search Form */
+.rounded-search {
+    border-radius: 25px;
+    overflow: hidden;
+}
+.rounded-search .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.rounded-search .input-group-append .btn {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 /* -------------------------------- Footer */
 .footer {
     background-color: var(--primary-black); 
@@ -93,4 +112,6 @@ body {
     .header-container {
         padding-top: 164px;
     }
+
+    
 }
