@@ -5,15 +5,53 @@
     border: none;
     outline: none;    
     color: var(--primary-black);
-    cursor: pointer;
-    padding: 15px;
+    cursor: pointer;    
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #333;
+    background-color: var(--primary-orange);
+}
+
+/* Default position for larger screens */
+@media (min-width: 992px) {
+    #scrollToTopBtn {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Adjusted position for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    #scrollToTopBtn {
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+/* Adjusted position for small screens */
+@media (max-width: 767px) {
+    #scrollToTopBtn {
+        bottom: 70px;
+        right: 10px;
+    }
+}
+
+/* Further adjustment for extra small screens */
+@media (max-width: 575px) {
+    #scrollToTopBtn {
+        bottom: 60px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
 }
