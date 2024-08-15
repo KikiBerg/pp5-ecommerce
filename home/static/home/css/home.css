@@ -1,0 +1,13 @@
+/* -------------------------------- Media Queries */
+@media (max-width: 767px) {
+    .mobile-adjust {
+        margin-top: 2rem;
+        font-size: 300%;
+        color: var(--primary-black);
+        font-weight: 500;
+        background-color: rgba(253, 249, 236, 0.9);
+        box-shadow: var(--box-shadow);
+    }
+}
+
+;
