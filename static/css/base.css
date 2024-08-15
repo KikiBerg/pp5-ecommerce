@@ -108,9 +108,9 @@ body {
     background-color: var(--primary-black);
     color: var(--primary-offwhite);
     padding: 10px 0;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
-    width: 100%;
+    width: 100%;    
 }
 
 .footer h5 {
@@ -170,8 +170,6 @@ body {
     .header-container {
         padding-top: 164px;
     }
-
-
 }
 
 @media (max-width: 767px) {
