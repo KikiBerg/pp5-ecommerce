@@ -2,6 +2,7 @@
     --primary-black: #2D2A1B;
     --primary-offwhite: #fdf9ec;
     --primary-orange: #E9995C;
+    --color-white: #f9f6f6;
     --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --btn-box-shadow: box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
@@ -22,7 +23,7 @@ body {
     background: url('/media/pexels-tatianasyrikova-3934019.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: white;
+    color: var(--color-white);
     font-family: "Reddit Mono", monospace;
 }
 
@@ -46,14 +47,13 @@ body {
 
 .shop-now-button {
     background: var(--primary-black);
-    color: white;
+    color: var(--color-white);
     min-width: 260px;
 }
 
 .btn-black {
     background: var(--primary-black);
-    color: white;
-    box-shadow: var(--btn-box-shadow);
+    color: var(--color-white);  
 }
 
 .shop-now-button:hover,
@@ -63,7 +63,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: var(--primary-black);
-    color: white;
+    color: var(--color-white);
 }
 
 .text-black {
@@ -77,6 +77,16 @@ body {
 .bg-offwhite {
     background: var(--primary-offwhite);
     border: 1px solid var(--primary-black);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: var(--color-white);
+	z-index: -1;
 }
 
 /* -------------------------------- Search Form */
