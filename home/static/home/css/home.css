@@ -1,7 +1,8 @@
 /* -------------------------------- Media Queries */
 @media (max-width: 767px) {
-    .mobile-adjust {
-        margin-top: 2rem;
+    .mobile-adjust {        
+        margin-top: 10rem;
+        padding: 5px;
         font-size: 300%;
         color: var(--primary-black);
         font-weight: 500;
