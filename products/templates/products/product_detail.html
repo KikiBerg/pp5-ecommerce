@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/product_detail.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -45,55 +49,55 @@
         </div>
         <!-- More specific product information -->
         <div class="col-12 col-md-6 col-lg-4 text-black">
-            <div class="product-specs-container mb-5 mt-md-5">
+            <div class="product-specs-container mb-5 mt-md-5 ">
                 <p class="lead mb-0 text-left font-weight-bold text-uppercase">Product Specifications</p>
                 <hr>
                 {% if not product.is_gardening_supply %}
-                <p><strong>Organic:</strong> {% if product.is_organic %}Yes{% else %}No{% endif %}</p>
+                <p class="spec-item"><strong>Organic:</strong> {% if product.is_organic %}Yes{% else %}No{% endif %}</p>
                 {% endif %}                
                 {% if product.days_to_maturity %}
-                <p><strong>Days to Maturity:</strong> {{ product.days_to_maturity }}</p>
+                <p class="spec-item"><strong>Days to Maturity:</strong> {{ product.days_to_maturity }}</p>
                 {% endif %}
                 {% if product.lifespan %}
-                <p><strong>Lifespan:</strong> {{ product.lifespan }}</p>
+                <p class="spec-item"><strong>Lifespan:</strong> {{ product.lifespan }}</p>
                 {% endif %}
                 {% if product.sowing_season %}
-                <p><strong>Sowing Season:</strong> {{ product.sowing_season }}</p>
+                <p class="spec-item"><strong>Sowing Season:</strong> {{ product.sowing_season }}</p>
                 {% endif %}
                 {% if product.sowing_depth %}
-                <p><strong>Sowing Depth:</strong> {{ product.sowing_depth }}</p>
+                <p class="spec-item"><strong>Sowing Depth:</strong> {{ product.sowing_depth }}</p>
                 {% endif %}
                 {% if product.germination_time %}
-                <p><strong>Germination Time:</strong> {{ product.germination_time }}</p>
+                <p class="spec-item"><strong>Germination Time:</strong> {{ product.germination_time }}</p>
                 {% endif %}
                 {% if product.sunlight_requirement %}
-                <p><strong>Sunlight Requirement:</strong> {{ product.sunlight_requirement }}</p>
+                <p class="spec-item"><strong>Sunlight Requirement:</strong> {{ product.sunlight_requirement }}</p>
                 {% endif %}
                 {% if product.water_requirement %}
-                <p><strong>Water Requirement:</strong> {{ product.water_requirement }}</p>
+                <p class="spec-item"><strong>Water Requirement:</strong> {{ product.water_requirement }}</p>
                 {% endif %}
                 {% if product.plant_spacing %}
-                <p><strong>Plant Spacing:</strong> {{ product.plant_spacing }}</p>
+                <p class="spec-item"><strong>Plant Spacing:</strong> {{ product.plant_spacing }}</p>
                 {% endif %}
                 {% if product.row_spacing %}
-                <p><strong>Row Spacing:</strong> {{ product.row_spacing }}</p>
+                <p class="spec-item"><strong>Row Spacing:</strong> {{ product.row_spacing }}</p>
                 {% endif %}
                 {% if product.height %}
-                <p><strong>Height:</strong> {{ product.height }}</p>
+                <p class="spec-item"><strong>Height:</strong> {{ product.height }}</p>
                 {% endif %}
                 {% if product.harvest_blooming %}
-                <p><strong>Harvest/Blooming:</strong> {{ product.harvest_blooming }}</p>
+                <p class="spec-item"><strong>Harvest/Blooming:</strong> {{ product.harvest_blooming }}</p>
                 {% endif %}
                 {% if product.seed_count %}
-                <p><strong>Seed Count:</strong> {{ product.seed_count }}</p>
+                <p class="spec-item"><strong>Seed Count:</strong> {{ product.seed_count }}</p>
                 {% endif %}
                 {% if product.instructions %}
-                <p><strong>Instructions:</strong> {{ product.instructions }}</p>
+                <p class="spec-item"><strong>Instructions:</strong> {{ product.instructions }}</p>
                 {% endif %}
                 {% if product.is_gardening_supply %}
-                <p><strong>Gardening Supply:</strong> Yes</p>
+                <p class="spec-item"><strong>Gardening Supply:</strong> Yes</p>
                 {% if product.dimensions %}
-                <p><strong>Dimensions:</strong> {{ product.dimensions }}</p>
+                <p class="spec-item"><strong>Dimensions:</strong> {{ product.dimensions }}</p>
                 {% endif %}
                 {% endif %}
             </div>
