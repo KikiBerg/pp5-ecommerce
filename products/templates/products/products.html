@@ -60,8 +60,17 @@
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
+                                    <!-- More Info Button -->
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <a href="{% url 'product_detail' product.id %}"
+                                                class="btn custom-button btn-sm">More Info <i
+                                                    class="fa-solid fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -102,13 +111,13 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         var scrollToTopBtn = $("#scrollToTopBtn");
-        
+
         // Initially hide the button
         scrollToTopBtn.hide();
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(window).scrollTop() > 300) {
                 scrollToTopBtn.fadeIn();
             } else {
@@ -116,8 +125,10 @@
             }
         });
 
-        scrollToTopBtn.click(function() {
-            $("html, body").animate({scrollTop: 0}, "slow");
+        scrollToTopBtn.click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
             return false;
         });
     });

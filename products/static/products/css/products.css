@@ -18,7 +18,18 @@
 }
 
 #scrollToTopBtn:hover {
-    background-color: var(--primary-orange);
+    background-color: var(--primary-yellow);
+}
+
+.custom-button {
+    background-color: var(--primary-offwhite);
+    color: var(--primary-black); 
+    border-radius: 7px;
+}
+
+.custom-button:hover {
+    background-color: var(--primary-yellow); 
+    color: var(--primary-black); 
 }
 
 /* Default position for larger screens */
