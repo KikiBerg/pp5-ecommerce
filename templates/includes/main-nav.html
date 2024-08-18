@@ -16,7 +16,7 @@
                 Vegetables
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="#" class="dropdown-item">All Vegetable seeds</a>
+                <a href="{% url 'products' %}?category=vegetable_seeds" class="dropdown-item">All Vegetable seeds</a>
                 <a href="#" class="dropdown-item ">By Name</a>
                 <a href="#" class="dropdown-item ">By Sowing Season</a> 
                 <a href="#" class="dropdown-item ">By Harvest Season</a>               
@@ -28,7 +28,7 @@
                 Herbs
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="#" class="dropdown-item">All Herb seeds</a>
+                <a href="{% url 'products' %}?category=herb_seeds" class="dropdown-item">All Herb seeds</a>
                 <a href="#" class="dropdown-item ">By Name</a>
                 <a href="#" class="dropdown-item ">By Lifespan</a>
                 <a href="#" class="dropdown-item ">By Sowing Season</a>                 
@@ -40,7 +40,7 @@
                 Flowers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">All Flowers</a>
+                <a href="{% url 'products' %}?category=flower_seeds" class="dropdown-item">All Flower seeds</a>
                 <a href="#" class="dropdown-item ">By Name</a>
                 <a href="#" class="dropdown-item ">By Lifespan</a> 
                 <a href="#" class="dropdown-item ">By Sowing Season</a>                
@@ -52,7 +52,7 @@
                 Garden Supplies
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="#" class="dropdown-item">All Garden Supplies</a>
+                <a href="{% url 'products' %}?gardening_supplies=True" class="dropdown-item">All Garden Supplies</a>
                 <a href="#" class="dropdown-item ">By Category</a>                
             </div>
         </li>
