@@ -6,8 +6,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                <a href="#" class="dropdown-item">By Price</a>
-                <a href="#" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
             </div>
         </li>
 
@@ -17,9 +17,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=vegetable_seeds" class="dropdown-item">All Vegetable seeds</a>
-                <a href="#" class="dropdown-item ">By Name</a>
-                <a href="#" class="dropdown-item ">By Sowing Season</a> 
-                <a href="#" class="dropdown-item ">By Harvest Season</a>               
+                <a href="{% url 'products' %}?category=vegetable_seeds&sort=name&direction=asc" class="dropdown-item ">By Name</a>
+                <a href="{% url 'products' %}?category=vegetable_seeds&sort=sowing_season&direction=asc" class="dropdown-item ">By Sowing Season</a> 
+                <a href="{% url 'products' %}?category=vegetable_seeds&sort=harvest_blooming&direction=asc" class="dropdown-item ">By Harvest Season</a>               
             </div>
         </li>
 
@@ -29,9 +29,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=herb_seeds" class="dropdown-item">All Herb seeds</a>
-                <a href="#" class="dropdown-item ">By Name</a>
-                <a href="#" class="dropdown-item ">By Lifespan</a>
-                <a href="#" class="dropdown-item ">By Sowing Season</a>                 
+                <a href="{% url 'products' %}?category=herb_seeds&sort=name&direction=asc" class="dropdown-item ">By Name</a>
+                <a href="{% url 'products' %}?category=herb_seeds&sort=lifespan&direction=asc" class="dropdown-item ">By Lifespan</a>
+                <a href="{% url 'products' %}?category=herb_seeds&sort=sowing_season&direction=asc" class="dropdown-item ">By Sowing Season</a>                 
             </div>
         </li>
 
@@ -41,9 +41,9 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?category=flower_seeds" class="dropdown-item">All Flower seeds</a>
-                <a href="#" class="dropdown-item ">By Name</a>
-                <a href="#" class="dropdown-item ">By Lifespan</a> 
-                <a href="#" class="dropdown-item ">By Sowing Season</a>                
+                <a href="{% url 'products' %}?category=flower_seeds&sort=name&direction=asc" class="dropdown-item ">By Name</a>
+                <a href="{% url 'products' %}?category=flower_seeds&sort=lifespan&direction=asc" class="dropdown-item ">By Lifespan</a> 
+                <a href="{% url 'products' %}?category=flower_seeds&sort=sowing_season&direction=asc" class="dropdown-item ">By Sowing Season</a>                
             </div>
         </li>
 
@@ -53,7 +53,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'products' %}?gardening_supplies=True" class="dropdown-item">All Garden Supplies</a>
-                <a href="#" class="dropdown-item ">By Category</a>                
+                <a href="{% url 'products' %}?gardening_supplies=True&sort=category&direction=asc" class="dropdown-item ">By Category</a>                
             </div>
         </li>
 
