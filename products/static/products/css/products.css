@@ -21,6 +21,11 @@
     background-color: var(--primary-yellow);
 }
 
+/* -------------------------------- Sorting Select */
+.sort-select-wrapper .custom-select {
+    border-radius: 25px;
+}
+
 .custom-button {
     background-color: var(--primary-offwhite);
     color: var(--primary-black); 

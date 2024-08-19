@@ -30,7 +30,6 @@ body {
     font-family: "Reddit Mono", monospace;
 }
 
-/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -75,6 +74,10 @@ body {
 
 .border-black {
     border: 1px solid var(--primary-black) !important;
+}
+
+.border-grey {
+    border: 1px solid var(--color-grey) !important;
 }
 
 .bg-offwhite {
