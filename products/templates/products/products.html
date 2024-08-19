@@ -23,12 +23,13 @@
     <div class="row">
         <div class="col text-center mt-3 text-black">
             <h2 class="logo-font">Products</h2>
+            <hr>            
         </div>
-    </div>
+    </div> 
     <!-- Product Cards Container -->
     <div class="row">
         <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
+            <div class="row mt-1 mb-2"></div> <!-- Product Sorting here -->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -49,11 +50,19 @@
                         <div class="card-body pb-0">
                             <h5 class="mb-0">{{ product.name }}</h5>
                         </div>
-                        <!-- Product Price and Rating -->
+                        <!-- Product Price, Category & Rating -->
                         <div class="card-footer bg-white pt-0 border-0 text-left text-black">
                             <div class="row">
                                 <div class="col">
                                     <p class="mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                    {% if product.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted"
+                                            href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
                                     {% if product.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                                         5</small>
