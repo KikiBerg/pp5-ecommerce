@@ -8,7 +8,8 @@ from .models import Product, Category
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    all_products = Product.objects.all()
+    products = all_products
     query = None
     categories = None
     is_gardening_supply = False
@@ -52,12 +53,20 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}' if sort and direction else None
 
+    # Get the total number of products
+    total_products = all_products.count()
+
+    # Get the number of products after filtering
+    products_count = products.count()
+
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
         'is_gardening_supply': is_gardening_supply,
         'current_sorting': current_sorting,
+        'products_count': products_count,
+        'total_products': total_products,
     }
 
     return render(request, 'products/products.html', context)

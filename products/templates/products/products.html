@@ -22,7 +22,7 @@
     <!-- Title Row -->
     <div class="row">
         <div class="col text-center mt-3 text-black">
-            <h2 class="logo-font">Products</h2>            
+            <h2 class="logo-font">Products</h2>
         </div>
     </div>
 
@@ -53,12 +53,14 @@
             </div>
             <!-- Product Counting Section -->
             <div class="w-100 w-md-75 mx-auto">
-                <p class="text-muted text-center">
+                <p class="text-grey text-center small">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                    <span><a href="{% url 'products' %}" class="text-black">Back to All Products</a> | </span>
                     {% endif %}
-                    {{ products|length }} Products{% if search_term %} found for
-                    <strong>"{{ search_term }}"</strong>{% endif %}
+                    Showing {{ products_count }} of {{ total_products }} products
+                    {% if search_term %}
+                    found for <strong>"{{ search_term }}"</strong>
+                    {% endif %}
                 </p>
             </div>
         </div>
@@ -94,17 +96,17 @@
                                     <p class="mb-0 text-left font-weight-bold">${{ product.price }}</p>
                                     {% if product.category %}
                                     <p class="small mt-1 mb-0">
-                                        <a class="text-muted"
+                                        <a class="text-grey"
                                             href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}
                                     {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                    <small class="text-grey"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                                         5</small>
                                     {% else %}
-                                    <small class="text-muted">No Rating</small>
+                                    <small class="text-grey">No Rating</small>
                                     {% endif %}
                                     <!-- More Info Button -->
                                     <div class="row mt-2">
