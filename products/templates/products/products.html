@@ -55,7 +55,7 @@
             <div class="w-100 w-md-75 mx-auto">
                 <p class="text-grey text-center small">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span><a href="{% url 'products' %}" class="text-black">Back to All Products</a> | </span>
+                    <span><a href="{% url 'products' %}" class="text-black"><i class="fas fa-chevron-left"></i> All Products</a> | </span>
                     {% endif %}
                     Showing {{ products_count }} of {{ total_products }} products
                     {% if search_term %}
