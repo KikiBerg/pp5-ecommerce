@@ -77,6 +77,10 @@ body {
     color: var(--color-grey) !important;
 }
 
+.text-green {
+    color: var(--primary-green) !important;
+}
+
 .border-black {
     border: 1px solid var(--primary-black) !important;
 }
