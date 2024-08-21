@@ -1,39 +1,126 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
 {% endblock %}
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4 text-black text-center">Your Shopping Basket</h2>
-                <hr>
-            </div>
-        </div>
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
 
-        <div class="row">
-            <div class="col text-black">
-                {% if bag_items %}
-                    <div class="table-responsive rounded">{{ bag_items }}</div>
-                {% else %}
-                    <p class="lead mb-5 text-center">Your basket is empty at the moment.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Continue shopping</span>
-                    </a>
-                {% endif %}
-            </div>
+<!-- Main content -->
+{% block content %}
+<div class="overlay"></div>
+<!-- Main content container -->
+<div class="container mb-2">
+    <!-- Introduction and title for the shopping basket page -->
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-black text-center">Your Shopping Basket</h2>
+            <hr>
         </div>
     </div>
+    <!-- Displaying items in the shopping basket -->
+    <div class="row">
+        <div class="col text-black">
+            {% if bag_items %}
+            <div class="table-responsive rounded">
+                <!-- Table structure for displaying basket items -->
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col" class="text-uppercase">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col" class="text-uppercase">Price</th>
+                            <th scope="col" class="text-uppercase">Qty</th>
+                            <th scope="col" class="text-uppercase">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td colspan="5">
+                            <hr>
+                        </td>
+                    </tr>
+                    {% for item in bag_items %}
+                    <tr>
+                        <!-- Product image, name, SKU, price, quantity, and subtotal -->
+                        <td class="p-3 w-25">
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" style="max-width: 100px;">
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3 w-25">
+                            <p class="my-0"><span class="qty-box">{{ item.quantity }}</span></p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">${{ item.product.price }}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <hr>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <!-- Summary section for total amounts -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <h6 class="d-flex justify-content-between"><strong>Bag Total</strong><span
+                            class="dotted-line"></span><strong>${{ total|floatformat:2 }}</strong></h6>
+                    <h6 class="d-flex justify-content-between">Delivery<span
+                            class="dotted-line"></span>${{ delivery|floatformat:2 }}</h6>
+                    <h4 class="mt-4 d-flex justify-content-between"><strong>Grand Total</strong><span
+                            class="dotted-line"></span><strong>${{ grand_total|floatformat:2 }}</strong></h4>
+                    {% if free_delivery_delta > 0 %}
+                    <p class="mb-1 text-danger">
+                        You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- Buttons for continuing shopping or proceeding to checkout -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-md-8 text-center">
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg mb-3 mb-md-0">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping</span>
+                        </a>
+                        <a href="#" class="btn btn-black rounded-0 btn-lg">
+                            <span class="text-uppercase">Secure Checkout</span>
+                            <span class="icon">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Message displayed when the basket is empty -->
+        {% else %}
+        <p class="lead mb-5 text-center">Your basket is empty at the moment.</p>
+        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Continue shopping</span>
+        </a>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
