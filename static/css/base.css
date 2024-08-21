@@ -56,7 +56,21 @@ body {
 
 .btn-black {
     background: var(--primary-black);
-    color: var(--color-white);  
+    color: var(--color-white); 
+    border-radius: 10px; 
+}
+
+.btn-outline-black {
+    background: var(--color-white);
+    color: var(--primary-black) !important;
+    border: 1px solid var(--primary-black);    
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: var(--primary-yellow);
+    color: var(--color-white) !important;
 }
 
 .shop-now-button:hover,
