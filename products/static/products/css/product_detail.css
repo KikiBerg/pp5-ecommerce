@@ -8,34 +8,3 @@
     border-bottom: none;
 }
 
-.quantity-selector {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-}
-
-.qty-button {
-    width: 30px; 
-    height: 30px; 
-    padding: 0; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 50%; 
-}
-
-.qty_input {
-    width: 50px;
-    text-align: center;
-    margin: 0 10px;
-    padding: 5px;
-    border: 1px solid var(--color-grey);
-    border-radius: 4px;
-}
-
-/* Remove spinner buttons from number input */
-.qty_input::-webkit-inner-spin-button, 
-.qty_input::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    margin: 0;
-}
