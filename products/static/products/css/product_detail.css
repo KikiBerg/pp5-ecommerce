@@ -1,8 +1,19 @@
-    .spec-item {
-        border-bottom: 1px dotted var(--primary-green);
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-    }
-    .spec-item:last-child {
-        border-bottom: none;
-    }
+.spec-item {
+    border-bottom: 1px dotted var(--primary-green);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.qty-button {
+    width: 40px; 
+    height: 40px; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+}
