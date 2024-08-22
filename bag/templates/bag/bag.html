@@ -26,52 +26,43 @@
             <hr>
         </div>
     </div>
-    <!-- Displaying items in the shopping basket -->
+    <!-- Section displaying items in the shopping basket -->
     <div class="row">
         <div class="col text-black">
             {% if bag_items %}
             <div class="table-responsive rounded">
-                <!-- Table structure for displaying basket items -->
                 <table class="table table-sm table-borderless">
+                    <!-- Table header -->
                     <thead class="text-black">
                         <tr>
                             <th scope="col" class="text-uppercase">Product Info</th>
-                            <th scope="col"></th>
                             <th scope="col" class="text-uppercase">Price</th>
-                            <th scope="col" class="text-uppercase">Qty</th>
+                            <th scope="col" class="text-uppercase text-center">Qty</th>
                             <th scope="col" class="text-uppercase">Subtotal</th>
                         </tr>
                     </thead>
-                    <tr>
-                        <td colspan="5">
-                            <hr>
-                        </td>
-                    </tr>
+                    <tr><td colspan="5"><hr></td></tr>
                     {% for item in bag_items %}
                     <tr>
-                        <!-- Product image, name, SKU, price, quantity, and subtotal -->
+                        <!-- Product information and price display -->
                         <td class="p-3 w-25">
                             <img class="img-fluid rounded" src="{{ item.product.image.url }}" style="max-width: 100px;">
-                        </td>
-                        <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small text-grey">SKU: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="py-3">
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
-                        <!-- Quantity -->
-                        <td class="py-3 w-25">
+                        <!-- Quantity selector form -->
+                        <td class="py-3">
                             <form class="form update-form" method="POST" action="#">
                                 {% csrf_token %}
                                 <div class="form-group">
-                                    <div class="input-group quantity-selector">
+                                    <div class="input-group input-group-sm quantity-selector mx-auto">
                                         <div class="input-group-prepend">
-                                            <button class="btn btn-outline-black rounded-circle qty-button decrement-qty" 
+                                            <button class="btn btn-sm btn-outline-black rounded-circle qty-button decrement-qty" 
                                                 data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-minus fa-sm"></i>
-                                                </span>
+                                                <i class="fas fa-minus fa-xs"></i>
                                             </button>
                                         </div>
                                         <input class="form-control form-control-sm qty_input" type="number"
@@ -79,28 +70,26 @@
                                             data-item_id="{{ item.item_id }}"
                                             id="id_qty_{{ item.item_id }}">
                                         <div class="input-group-append">
-                                            <button class="btn btn-outline-black rounded-circle qty-button increment-qty"
+                                            <button class="btn btn-sm btn-outline-black rounded-circle qty-button increment-qty"
                                                 data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-plus fa-sm"></i>
-                                                </span>
+                                                <i class="fas fa-plus fa-xs"></i>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                            <a class="update-link text-info"><small>Update</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                            <!-- Action buttons for updating and removing items -->
+                            <div class="text-center mt-2">
+                                <a class="update-link text-info mr-2" data-item_id="{{ item.item_id }}"><i class="fas fa-sync-alt"></i></a>
+                                <a class="remove-item text-danger" id="remove_{{ item.item_id }}"><i class="fas fa-trash-alt"></i></a>
+                            </div>
                         </td>
+                        <!-- Subtotal display -->
                         <td class="py-3">
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan="5">
-                            <hr>
-                        </td>
-                    </tr>
+                    <tr><td colspan="5"><hr></td></tr>
                     {% endfor %}
                 </table>
             </div>
