@@ -66,6 +66,12 @@ body {
     border: 1px solid var(--primary-black);    
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
