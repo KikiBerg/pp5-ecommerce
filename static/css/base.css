@@ -8,6 +8,11 @@
     --color-grey: #b4b4b1;
     --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     --btn-box-shadow: box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    --toast-success: #A8B99C;
+    --toast-info: #7C9A9E;
+    --toast-warning: #E6B87D;
+    --toast-error: #da664c;
 }
 
 *,
@@ -56,14 +61,14 @@ body {
 
 .btn-black {
     background: var(--primary-black);
-    color: var(--color-white); 
-    border-radius: 10px; 
+    color: var(--color-white);
+    border-radius: 10px;
 }
 
 .btn-outline-black {
     background: var(--color-white);
     color: var(--primary-black) !important;
-    border: 1px solid var(--primary-black);    
+    border: 1px solid var(--primary-black);
 }
 
 .btt-link,
@@ -115,17 +120,17 @@ body {
 }
 
 .bg-white {
-    background: var(--color-white);    
+    background: var(--color-white);
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: var(--color-white);
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--color-white);
+    z-index: -1;
 }
 
 /* -------------------------------- Search Form */
@@ -145,11 +150,11 @@ body {
 }
 
 /* -------------------------------- Navigation */
-.nav-item.dropdown > a::after {
+.nav-item.dropdown>a::after {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-left: 5px;    
+    margin-left: 5px;
 }
 
 /* -------------------------------- Quantity buttons */
@@ -161,13 +166,13 @@ body {
 }
 
 .qty-button {
-    width: 20px; 
-    height: 20px; 
-    padding: 0; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .qty_input {
@@ -180,8 +185,8 @@ body {
 }
 
 /* Remove spinner buttons from number input */
-.qty_input::-webkit-inner-spin-button, 
-.qty_input::-webkit-outer-spin-button { 
+.qty_input::-webkit-inner-spin-button,
+.qty_input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -195,7 +200,7 @@ body {
     padding: 10px 0;
     /*position: fixed;*/
     bottom: 0;
-    width: 100%;    
+    width: 100%;
 }
 
 .footer h5 {
@@ -244,6 +249,8 @@ body {
 .custom-toast {
     /*overflow: visible;*/
     background-color: var(--primary-offwhite);
+    color: var(--primary-black);
+    border-left: 4px solid;   
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     overflow: hidden;
@@ -310,30 +317,25 @@ body {
     opacity: 1;
 }
 
-.toast-progress {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    animation: progress 3s linear;
-}
-
 /* Toast types */
-.success .toast-icon, .success .toast-progress {
-    background-color: #28a745;
+.custom-toast.success {
+    border-color: var(--toast-success);    
 }
 
-.info .toast-icon, .info .toast-progress {
-    background-color: #17a2b8;
+.custom-toast.info {
+    border-color: var(--toast-info);
 }
 
-.warning .toast-icon, .warning .toast-progress {
-    background-color: #ffc107;
+.custom-toast.warning {
+    border-color: var(--toast-warning);
 }
 
-.error .toast-icon, .error .toast-progress {
-    background-color: #dc3545;
+.custom-toast.error {
+    border-color: var(--toast-error);
+}
+
+.custom-toast .toast-icon {
+    color: inherit;
 }
 
 @keyframes slideIn {
@@ -341,18 +343,10 @@ body {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
-    }
-}
-
-@keyframes progress {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0%;
     }
 }
 
@@ -397,8 +391,8 @@ body {
     }
 
     h4 {
-        font-size: medium;        
-    }    
+        font-size: medium;
+    }
 
     .quantity-selector {
         max-width: 100px;
@@ -449,7 +443,7 @@ body {
 }
 
 @media (max-width: 575px) {
-    
+
     /* Footer */
     .footer {
         padding: 5px 0;
