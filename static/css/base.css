@@ -10,7 +10,7 @@
     --btn-box-shadow: box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
     --toast-success: #A8B99C;
-    --toast-info: #7C9A9E;
+    --toast-info: #95b0b4;
     --toast-warning: #E6B87D;
     --toast-error: #da664c;
 }
@@ -256,7 +256,24 @@ body {
     overflow: hidden;
     margin-bottom: 1rem;
     width: 300px;
+    max-width: 100%;
     animation: slideIn 0.3s ease-out;
+}
+
+.toast-body {
+    padding: 15px;
+    background-color: var(--primary-offwhite);
+}
+
+.bag-notification-wrapper {
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bg-info {
+    background-color: var(--toast-info) !important;
+    color: var(--primary-black);
 }
 
 /*.toast-capper {

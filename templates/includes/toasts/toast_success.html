@@ -10,5 +10,49 @@
     </div>
     <button type="button" class="toast-close" data-dismiss="toast" aria-label="Close">
         <i class="fas fa-times"></i>
-    </button>    
+    </button>
+    <div class="toast-body">
+        <hr class="mt-1 mb-3">
+        {% if grand_total %}
+        <p class="font-weight-bold">Your Bag ({{ product_count }})</p>
+        <div class="bag-notification-wrapper">
+            {% for item in bag_items %}
+            <div class="row">
+                <div class="col-3 my-1">
+                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                </div>
+                <div class="col-9">
+                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>                   
+                    <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <strong>
+                    <p class="mb-1">
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
+                        <span class="float-right">${{ total|floatformat:2 }}</span>
+                    </p>
+                </strong>
+                {% if free_delivery_delta > 0 %}
+                <p class="mb-3 p-2 bg-info text-center">
+                    Spend <strong>${{ free_delivery_delta }}</strong> more to get free next day delivery!
+                </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="{% url 'view_bag' %}" class="btn btn-sm btn-outline-black">
+                    <span class="text-uppercase">Checkout</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
 </div>
