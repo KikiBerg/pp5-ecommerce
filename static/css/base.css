@@ -232,21 +232,128 @@ body {
     background-color: var(--primary-orange);
 }
 
-/* ------------------------------- Bootstrap toasts */
+/* ------------------------------- Toasts */
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     z-index: 99999999999;
 }
 
 .custom-toast {
-    overflow: visible;
+    /*overflow: visible;*/
+    background-color: var(--primary-offwhite);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    width: 300px;
+    animation: slideIn 0.3s ease-out;
 }
 
-.toast-capper {
+/*.toast-capper {
     height: 2px;
+}*/
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.toast-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.toast-icon i {
+    font-size: 20px;
+    color: var(--primary-black);
+}
+
+.toast-message {
+    flex-grow: 1;
+}
+
+.toast-message h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.toast-message p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.toast-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+.toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    animation: progress 3s linear;
+}
+
+/* Toast types */
+.success .toast-icon, .success .toast-progress {
+    background-color: #28a745;
+}
+
+.info .toast-icon, .info .toast-progress {
+    background-color: #17a2b8;
+}
+
+.warning .toast-icon, .warning .toast-progress {
+    background-color: #ffc107;
+}
+
+.error .toast-icon, .error .toast-progress {
+    background-color: #dc3545;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes progress {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
 }
 
 /* -------------------------------- Media Queries */
