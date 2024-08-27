@@ -106,6 +106,10 @@ body {
     color: var(--primary-green) !important;
 }
 
+.text-danger {
+    color: var(--toast-error) !important;
+}
+
 .border-black {
     border: 1px solid var(--primary-black) !important;
 }
