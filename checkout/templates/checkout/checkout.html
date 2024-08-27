@@ -65,10 +65,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
             {% endfor %}
+            <p class="text-grey">Total amount of products: {{ product_count }}</p>
             <!-- Display total order details -->
             <div class="summary-card">
                 <div class="row text-right">
@@ -123,7 +124,7 @@
                     </div>
                 </fieldset>
                 <!-- Payment processing area -->
-                <fieldset class="px-3">
+                <fieldset class="rounded px-3 mb-5">
                     <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                     <!-- A Stripe card element will go here -->
                     <div class="mb-3" id="card-element"></div>
@@ -156,4 +157,11 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}

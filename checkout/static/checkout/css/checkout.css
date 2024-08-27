@@ -5,6 +5,7 @@
     padding: 10px;
     margin-bottom: 15px;
 }
+
 .quantity-box {
     display: inline-block;
     border: 1px solid var(--color-grey);
@@ -12,6 +13,7 @@
     border-radius: 4px;
     margin-left: 5px;
 }
+
 .summary-card {
     background-color: var(--primary-offwhite);
     border-radius: 8px;    
@@ -19,9 +21,49 @@
     padding: 10px;
     margin-top: 15px;
 }
+
 .product-image {
     max-width: 100px;
     height: auto;
     padding: 3px;
     border-radius: 5px;    
+}
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 45px; 
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px 0 var(--toast-info);
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 var(--color-grey);
+}
+
+.StripeElement--webkit-autofill {
+  background-color: var(--primary-yellow) !important;
+}
+
+.stripe-style-input::placeholder {
+    color: var(--toast-info);
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    border: 1px solid var(--primary-offwhite);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
