@@ -110,6 +110,10 @@ body {
     color: var(--toast-error) !important;
 }
 
+.text-info {
+    color: var(--toast-info) !important;
+}
+
 .border-black {
     border: 1px solid var(--primary-black) !important;
 }
@@ -195,6 +199,24 @@ body {
     margin: 0;
 }
 
+/* -------------------------------- Dotted lines */
+.dotted-line {
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--color-grey);   
+    margin: 0 10px;
+    align-self: flex-end;
+    position: relative;
+    top: -0.3em;
+}
+
+.d-flex {
+    align-items: baseline;
+}
+
+.d-flex > span, .d-flex > strong {
+    display: inline-block;
+    vertical-align: bottom;
+}
 
 
 /* -------------------------------- Footer */
