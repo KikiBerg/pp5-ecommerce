@@ -19,3 +19,39 @@
 #id_default_country option:first-child {
     color: var(--toast-info);
 }
+
+.form-group {
+    border-color: var(--toast-info);
+}
+
+.card {
+    border: 1px solid var(--primary-black);
+}
+
+.order-history-item {
+    margin-bottom: 20px;
+}
+
+.order-history-item hr {
+    margin: 10px 0;
+}
+
+.form-control {
+    border: 1px solid var(--color-grey);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.section-spacing {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+    .order-history-section {
+        padding-left: 2rem;
+    }
+}
