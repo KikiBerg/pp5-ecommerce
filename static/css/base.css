@@ -263,6 +263,10 @@ body {
     background-color: var(--primary-orange);
 }
 
+input[name='q']::placeholder {
+    color: var(--toast-info);
+}
+
 /* ------------------------------- Toasts */
 
 .message-container {
@@ -392,6 +396,60 @@ body {
         opacity: 1;
     }
 }
+
+/* -------------------------------- Allauth form formatting */
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: var(--color-grey); 
+}
+
+.allauth-form-inner-content input {
+    border-color: var(--primary-black);
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: var(--toast-info);
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color:  var(--primary-black);
+    border: 1px solid var(--primary-black);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: var(--color-white);
+    background-color:  var(--primary-black);
+    border-color: var(--primary-black);
+}
+
+.allauth-form-inner-content a {
+	color: var(--toast-info); /* text-info */
+}
+
 
 /* -------------------------------- Media Queries */
 
