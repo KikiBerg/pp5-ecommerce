@@ -36,7 +36,7 @@
                         <strong class="mr-2">Order Number:</strong>
                         <span class="text-break">{{ order.order_number }}</span>
                     </div>
-                    
+
                     <div class="d-flex flex-wrap justify-content-between mb-2">
                         <strong class="mr-2">Order Date:</strong>
                         <span>{{ order.date }}</span>
@@ -122,8 +122,18 @@
         <div class="col-12 text-center">
             <h3>What's Next?</h3>
             <p>We'll start processing your order right away. You'll receive another email when your items have been
-                shipped.</p>
+                shipped.
+            </p>
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="text-uppercase">Back to Profile</span>
+            </a>
+            {% else %}
             <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">Continue Shopping</a>
+            {% endif %}
         </div>
     </div>
     <hr>
@@ -153,7 +163,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Call to Action for FAQ Section -->
     <div class="row mt-5">
         <div class="col-12 text-center">
