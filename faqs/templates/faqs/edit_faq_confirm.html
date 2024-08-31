@@ -11,23 +11,61 @@
 
 {% block content %}
 <div class="overlay"></div>
-    <h2 class="logo-font mb-4 text-black text-center">Confirm Edit FAQ</h2>
-    <p>Are you sure you want to apply the following changes to this FAQ?</p>
-    
-    <h3>Original FAQ:</h3>
-    <p><strong>Question:</strong> {{ faq.question }}</p>
-    <p><strong>Answer:</strong> {{ faq.answer }}</p>
-    <p><strong>Category:</strong> {{ faq.category }}</p>
-    
-    <h3>Updated FAQ:</h3>
-    <p><strong>Question:</strong> {{ form.cleaned_data.question }}</p>
-    <p><strong>Answer:</strong> {{ form.cleaned_data.answer }}</p>
-    <p><strong>Category:</strong> {{ form.cleaned_data.category }}</p>
-    
-    <form method="post" action="{% url 'edit_faq' faq.id %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" name="confirm" class="btn btn-primary">Confirm Changes</button>
-        <button type="submit" name="cancel" class="btn btn-secondary">Cancel</button>
-    </form>
+<!-- Main content container -->
+<div class="container mb-2">
+    <!-- Introduction and title for the edit confirmation page -->
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-black text-center">Confirm Edit FAQ</h2>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Edit confirmation content -->
+    <div class="row justify-content-center text-black">
+        <div class="col-12 col-md-8">
+            <p class="text-center text-danger"><strong>Are you sure you want to apply the following changes to this FAQ?</strong></p>
+            
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h3>Original FAQ</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Question:</strong> {{ faq.question }}</p>
+                    <p><strong>Answer:</strong> {{ faq.answer }}</p>
+                    <p><strong>Category:</strong> {{ faq.category }}</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h3>Updated FAQ</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Question:</strong> {{ form.cleaned_data.question }}</p>
+                    <p><strong>Answer:</strong> {{ form.cleaned_data.answer }}</p>
+                    <p><strong>Category:</strong> {{ form.cleaned_data.category }}</p>
+                </div>
+            </div>
+            
+            <form method="post" action="{% url 'edit_faq' faq.id %}" class="text-center mt-4">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" name="confirm" class="btn btn-black rounded-0">
+                    <span class="icon">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span class="text-uppercase">Confirm Changes</span>
+                </button>
+                <button type="submit" name="cancel" class="btn btn-outline-black rounded-0">
+                    <span class="icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <span class="text-uppercase">Cancel</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
