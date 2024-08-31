@@ -1,0 +1,14 @@
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.form-control {
+    width: 100%;
+    max-width: 100%;
+}
