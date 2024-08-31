@@ -11,13 +11,39 @@
 
 {% block content %}
 <div class="overlay"></div>
-<h2>{% if faq %}Edit FAQ{% else %}Add New FAQ{% endif %}</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">
-        {% if faq %}Review Changes{% else %}Save{% endif %}
-    </button>
-    <a href="{% url 'faq_list' %}" class="btn btn-secondary">Cancel</a>
-</form>
+<!-- Main content container -->
+<div class="container mb-2">
+    <!-- Introduction and title for the FAQ form page -->
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-black text-center">{% if faq %}Edit FAQ{% else %}Add New FAQ{% endif %}</h2>
+            <hr>
+        </div>
+    </div>
+
+    <!-- FAQ form content -->
+    <div class="row justify-content-center text-black">
+        <div class="col-12 col-md-6">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-black rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        <span class="text-uppercase">{% if faq %}Review Changes{% else %}Save{% endif %}</span>
+                    </button>
+                    <a href="{% url 'faq_list' %}" class="btn btn-outline-black rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
