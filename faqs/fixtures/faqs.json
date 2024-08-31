@@ -1,0 +1,199 @@
+[{
+        "model": "faqs.faq",
+        "pk": 1,
+        "fields": {
+            "question": "How long do vegetable seeds typically last?",
+            "answer": "Most vegetable seeds remain viable for 2-3 years when stored properly in a cool, dry place. However, onion and corn seeds have shorter lifespans, while tomato and cucumber seeds can last up to 5 years.",
+            "category": 1,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 2,
+        "fields": {
+            "question": "What's the best time to plant vegetable seeds?",
+            "answer": "The best time to plant vegetable seeds depends on the specific vegetable and your local climate. Generally, cool-season crops like lettuce and peas are planted in early spring, while warm-season crops like tomatoes and peppers are planted after the last frost date.",
+            "category": 1,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 3,
+        "fields": {
+            "question": "Which herbs are easiest to grow from seeds?",
+            "answer": "Some of the easiest herbs to grow from seeds include basil, cilantro, dill, and chives. These herbs germinate quickly and are relatively low-maintenance.",
+            "category": 2,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 4,
+        "fields": {
+            "question": "Can I grow herbs indoors from seeds?",
+            "answer": "Yes, many herbs can be successfully grown indoors from seeds. Ensure they receive adequate light (at least 6 hours of direct sunlight or use grow lights), proper watering, and good air circulation.",
+            "category": 2,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 5,
+        "fields": {
+            "question": "How deep should I plant flower seeds?",
+            "answer": "As a general rule, plant flower seeds at a depth of about twice their diameter. Very small seeds should be pressed into the soil surface and not covered. Always check the seed packet for specific planting instructions.",
+            "category": 3,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 6,
+        "fields": {
+            "question": "What are some fast-growing flower seeds?",
+            "answer": "Some fast-growing flower seeds include sunflowers, zinnias, marigolds, cosmos, and nasturtiums. These can often bloom within 6-8 weeks of planting.",
+            "category": 3,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 7,
+        "fields": {
+            "question": "What's the difference between organic and non-organic seeds?",
+            "answer": "Organic seeds are produced from plants grown without synthetic fertilizers, pesticides, or genetic modification. They are often more expensive but are preferred by those who want to ensure their entire growing process is organic.",
+            "category": 4,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 8,
+        "fields": {
+            "question": "Do organic seeds produce better yields?",
+            "answer": "Not necessarily. The yield depends more on growing conditions and care than whether the seeds are organic. However, organic seeds may be better adapted to organic growing methods and can produce plants with better resistance to pests and diseases in organic systems.",
+            "category": 4,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 9,
+        "fields": {
+            "question": "What's the difference between organic and synthetic fertilizers?",
+            "answer": "Organic fertilizers are derived from natural sources and release nutrients slowly. Synthetic fertilizers are chemically manufactured and provide nutrients more quickly. Organic fertilizers improve soil structure over time, while synthetic fertilizers are more concentrated and fast-acting.",
+            "category": 5,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 10,
+        "fields": {
+            "question": "How often should I fertilize my plants?",
+            "answer": "The frequency of fertilization depends on the type of plant, soil condition, and fertilizer used. Generally, most plants benefit from fertilization every 4-6 weeks during the growing season. Always follow the instructions on the fertilizer package and avoid over-fertilizing, which can harm plants.",
+            "category": 5,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 11,
+        "fields": {
+            "question": "What size pot should I use for my plants?",
+            "answer": "The pot size depends on the plant's root system and growth rate. As a general rule, choose a pot that's 1-2 inches larger in diameter than the current pot. For fast-growing plants, you might need to go up 2-4 inches in diameter.",
+            "category": 6,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 12,
+        "fields": {
+            "question": "Are there advantages to using self-watering planters?",
+            "answer": "Yes, self-watering planters have several advantages. They provide a consistent moisture level, reduce the frequency of watering, and are great for vacation periods. They're particularly useful for plants that prefer consistently moist soil.",
+            "category": 6,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 13,
+        "fields": {
+            "question": "What are the essential tools for a beginner gardener?",
+            "answer": "Essential tools for beginners include a hand trowel, pruning shears, garden fork, watering can or hose, and gardening gloves. As you expand your garden, you might add a wheelbarrow, rake, and long-handled spade.",
+            "category": 7,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 14,
+        "fields": {
+            "question": "How do I maintain my gardening tools?",
+            "answer": "To maintain your gardening tools, clean them after each use, removing dirt and debris. Keep cutting tools sharp. Apply a light coat of oil to metal parts to prevent rust. Store tools in a dry place. Wooden handles can be treated with linseed oil to prevent drying and cracking.",
+            "category": 7,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 15,
+        "fields": {
+            "question": "What's the advantage of using a drip irrigation system?",
+            "answer": "Drip irrigation systems deliver water directly to plant roots, reducing water waste through evaporation or runoff. They're efficient, can be automated, and help prevent leaf diseases by keeping foliage dry. They're especially useful for large gardens or areas with water restrictions.",
+            "category": 8,
+            "created_at": "2024-08-31T10:00:00Z",
+            "updated_at": "2024-08-31T10:00:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 16,
+        "fields": {
+            "question": "How do I choose the right sprinkler for my garden?",
+            "answer": "Choose a sprinkler based on your garden's size and shape. Oscillating sprinklers are good for rectangular areas, while impact sprinklers work well for large, circular areas. For small or irregularly shaped gardens, consider an adjustable pattern sprinkler. Also, consider water pressure and the types of plants you're watering.",
+            "category": 8,
+            "created_at": "2024-08-31T10:01:00Z",
+            "updated_at": "2024-08-31T10:01:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 17,
+        "fields": {
+            "question": "What's the best way to store herb seeds?",
+            "answer": "Store herb seeds in airtight containers in a cool, dark place. A refrigerator is ideal for long-term storage, but make sure seeds are completely dry before refrigerating.",
+            "category": 2,
+            "created_at": "2024-08-31T10:01:00Z",
+            "updated_at": "2024-08-31T10:01:00Z"
+        }
+    },
+    {
+        "model": "faqs.faq",
+        "pk": 18,
+        "fields": {
+            "question": "When is the best time to plant flower seeds?",
+            "answer": "The best time to plant flower seeds depends on the specific flower and your climate. Generally, most annual flowers can be planted in spring after the last frost, while perennials are often best planted in fall.",
+            "category": 3,
+            "created_at": "2024-08-31T10:02:00Z",
+            "updated_at": "2024-08-31T10:02:00Z"
+        }
+    }
+]
