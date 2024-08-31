@@ -18,7 +18,7 @@
 <h2 class="logo-font mb-4 text-black text-center">Frequently Asked Questions</h2>
 
 {% if user.is_superuser %}
-<a href="#" class="btn btn-primary">Add New FAQ</a>
+<a href="{% url 'add_faq' %}" class="btn btn-primary">Add New FAQ</a>
 {% endif %}
 
 {% for category in categories %}

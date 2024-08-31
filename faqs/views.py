@@ -1,7 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib import messages
+from .models import FAQ
+from .forms import FAQForm
 from products.models import Category
 
 
 def faq_list(request):
     categories = Category.objects.all()
     return render(request, 'faqs/faq_list.html', {'categories': categories})
+
+@user_passes_test(lambda u: u.is_superuser)
+def add_faq(request):
+    if request.method == 'POST':
+        form = FAQForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'FAQ added successfully.')
+            return redirect('faq_list')
+    else:
+        form = FAQForm()
+    return render(request, 'faqs/faq_form.html', {'form': form})
