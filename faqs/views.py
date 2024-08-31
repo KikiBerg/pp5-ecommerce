@@ -34,3 +34,10 @@ def edit_faq(request, faq_id):
     else:
         form = FAQForm(instance=faq)
     return render(request, 'faqs/faq_form.html', {'form': form, 'faq': faq})
+
+@user_passes_test(lambda u: u.is_superuser)
+def delete_faq(request, faq_id):
+    faq = get_object_or_404(FAQ, id=faq_id)
+    faq.delete()
+    messages.success(request, 'FAQ deleted successfully.')
+    return redirect('faq_list')
