@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+    <h2 class="logo-font mb-4 text-black text-center">Confirm Edit FAQ</h2>
+    <p>Are you sure you want to apply the following changes to this FAQ?</p>
+    
+    <h3>Original FAQ:</h3>
+    <p><strong>Question:</strong> {{ faq.question }}</p>
+    <p><strong>Answer:</strong> {{ faq.answer }}</p>
+    <p><strong>Category:</strong> {{ faq.category }}</p>
+    
+    <h3>Updated FAQ:</h3>
+    <p><strong>Question:</strong> {{ form.cleaned_data.question }}</p>
+    <p><strong>Answer:</strong> {{ form.cleaned_data.answer }}</p>
+    <p><strong>Category:</strong> {{ form.cleaned_data.category }}</p>
+    
+    <form method="post" action="{% url 'edit_faq' faq.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" name="confirm" class="btn btn-primary">Confirm Changes</button>
+        <button type="submit" name="cancel" class="btn btn-secondary">Cancel</button>
+    </form>
+{% endblock %}
