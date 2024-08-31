@@ -38,6 +38,13 @@ def edit_faq(request, faq_id):
 @user_passes_test(lambda u: u.is_superuser)
 def delete_faq(request, faq_id):
     faq = get_object_or_404(FAQ, id=faq_id)
-    faq.delete()
-    messages.success(request, 'FAQ deleted successfully.')
-    return redirect('faq_list')
+    
+    if request.method == 'POST':
+        if 'confirm' in request.POST:
+            faq.delete()
+            messages.success(request, 'FAQ deleted successfully.')
+            return redirect('faq_list')
+        else:
+            return redirect('faq_list')
+    
+    return render(request, 'faqs/delete_faq_confirm.html', {'faq': faq})
