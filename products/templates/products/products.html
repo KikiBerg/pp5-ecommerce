@@ -55,7 +55,8 @@
             <div class="w-100 w-md-75 mx-auto">
                 <p class="text-grey text-center small">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span><a href="{% url 'products' %}" class="text-black"><i class="fas fa-chevron-left"></i> All Products</a> | </span>
+                    <span><a href="{% url 'products' %}" class="text-black"><i class="fas fa-chevron-left"></i> All
+                            Products</a> | </span>
                     {% endif %}
                     Showing {{ products_count }} of {{ total_products }} products
                     {% if search_term %}
@@ -107,6 +108,12 @@
                                         5</small>
                                     {% else %}
                                     <small class="text-grey">No Rating</small>
+                                    {% endif %}
+                                    {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
                                     {% endif %}
                                     <!-- More Info Button -->
                                     <div class="row mt-2">
