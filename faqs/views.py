@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth.decorators import user_passes_test
+from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import FAQ
 from .forms import FAQForm
@@ -10,8 +10,11 @@ def faq_list(request):
     categories = Category.objects.all()
     return render(request, 'faqs/faq_list.html', {'categories': categories})
 
-@user_passes_test(lambda u: u.is_superuser)
+@login_required
 def add_faq(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
     if request.method == 'POST':
         form = FAQForm(request.POST)
         if form.is_valid():
@@ -22,8 +25,12 @@ def add_faq(request):
         form = FAQForm()
     return render(request, 'faqs/faq_form.html', {'form': form})
 
-@user_passes_test(lambda u: u.is_superuser)
+@login_required
 def edit_faq(request, faq_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     faq = get_object_or_404(FAQ, id=faq_id)
 
     if request.method == 'POST':
@@ -45,10 +52,14 @@ def edit_faq(request, faq_id):
 
     return render(request, 'faqs/faq_form.html', {'form': form, 'faq': faq})
 
-@user_passes_test(lambda u: u.is_superuser)
+@login_required
 def delete_faq(request, faq_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     faq = get_object_or_404(FAQ, id=faq_id)
-    
+
     if request.method == 'POST':
         if 'confirm' in request.POST:
             faq.delete()
