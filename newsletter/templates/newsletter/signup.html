@@ -11,10 +11,51 @@
 
 {% block content %}
 <div class="overlay"></div>
-<h2>Subscribe to Our Newsletter</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Subscribe</button>
-</form>
+<!-- Main content container -->
+<div class="container mb-2 text-black">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-black text-center">Subscribe to Our Newsletter</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+            <form method="post" action="{% url 'newsletter:signup' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                    {% if form.email.errors %}
+                        <div class="invalid-feedback d-block">
+                            {{ form.email.errors }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-black rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="text-uppercase">Subscribe</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% if messages %}
+    <div class="row mt-4">
+        <div class="col-12">
+            {% for message in messages %}
+            <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-info{% endif %} text-center" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
 {% endblock %}
