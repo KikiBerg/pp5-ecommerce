@@ -65,6 +65,10 @@ body {
     border-radius: 10px;
 }
 
+.btn-danger {
+    color: var(--toast-error);
+}
+
 .btn-outline-black {
     background: var(--color-white);
     color: var(--primary-black) !important;
