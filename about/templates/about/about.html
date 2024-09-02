@@ -16,8 +16,27 @@
         <div class="col">
             <hr>
             <h2 class="logo-font mb-4 text-black text-center">{{ about_content.title }}</h2>
+            <p class="text-black text-center text-uppercase">A Family Legacy Since 1986</p>
             <hr>
-            <p class="text-black text-center">{{ about_content.content }}</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+            <p class="text-black text-left"> <i class="fa-brands fa-pagelines"></i> {{ about_content.content }}</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+            <p class="text-black text-left"> <i class="fa-brands fa-pagelines"></i> A cultivation with genuine respect for
+                living things. A cultivation where balance is more important than maximum yield. Without the use of
+                easily soluble artificial fertilizers and chemical pesticides and growth promoters. And we do what we
+                can to find seed producers around the world who share the same attitude. The standard varieties, those
+                that are normally self-pollinating or open-pollinated, will continue to dominate our assortment. Not for
+                nostalgic or conservative reasons, but because many of them give excellent yields in several aspects
+                through their own power. They are too good to disappear forever. Many of them hang by a thin thread, and
+                together we can contribute to saving some from oblivion.</p>
         </div>
     </div>
 
@@ -61,7 +80,8 @@
     <div class="row mt-4">
         <div class="col-12">
             {% for message in messages %}
-            <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-info{% endif %} text-center" role="alert">
+            <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-info{% endif %} text-center"
+                role="alert">
                 {{ message }}
             </div>
             {% endfor %}

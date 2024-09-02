@@ -30,4 +30,3 @@ def about_view(request):
         'contact_form': contact_form,
         'newsletter_form': newsletter_form,
     })
-    
