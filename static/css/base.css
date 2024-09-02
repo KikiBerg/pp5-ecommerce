@@ -450,6 +450,33 @@ input[name='q']::placeholder {
 	color: var(--toast-info); /* text-info */
 }
 
+/* -------------------------------- Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: var(--toast-error);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color:var(--toast-error);
+    border-color: var(--toast-error);
+    border-radius: 0;
+}
 
 /* -------------------------------- Media Queries */
 
