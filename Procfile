@@ -1,0 +1,1 @@
+web: gunicorn seed_and_sprout.wsgi:application

@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+import dj_database_url
+
 from pathlib import Path
 
 if os.path.isfile('env.py'):
@@ -27,15 +29,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v=dvgwz07yg+j#j*8wndt+!(q3vx2dd90m6)$5@sa&q_tnwr3l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-kikiberg-pp5ecommerce-2snke996bz6.ws.codeinstitute-ide.net',
+    'seedandsprout-ab1eae7ba537.herokuapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-kikiberg-pp5ecommerce-2snke996bz6.ws.codeinstitute-ide.net',
-    'https://.*codeinstitute-ide.net',    
+    'https://seedandsprout-ab1eae7ba537.herokuapp.com',
+    'https://.*codeinstitute-ide.net',
+    'https://.*herokuapp.com',
 ]
 
 
@@ -133,13 +138,17 @@ LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
