@@ -37,6 +37,11 @@ body {
     font-family: "Reddit Mono", monospace;
 }
 
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
