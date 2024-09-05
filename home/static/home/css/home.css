@@ -11,4 +11,13 @@
     }
 }
 
-;
+@media (min-width: 992px) {    
+    .custom-h1 {
+        margin-top: 5rem;
+    }
+
+    
+    .custom-link {
+        margin-top: 3rem; 
+    }
+}

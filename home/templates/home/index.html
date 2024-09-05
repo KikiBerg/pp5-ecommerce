@@ -6,23 +6,24 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="container h-100">
     <div class="row h-100">
         <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-lg-left mobile-adjust">
+            <h1 class="display-4 logo-font text-lg-left mobile-adjust custom-h1">
                 QUALITY SEEDS SINCE 1986
             </h1>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn rounded-0 text-uppercase py-3">
+                    <a href="{% url 'products' %}"
+                        class="shop-now-button btn rounded-0 text-uppercase py-3 custom-link">
                         Make your order now
                         <i class="fas fa-shopping-bag ml-2"></i>
                     </a>
