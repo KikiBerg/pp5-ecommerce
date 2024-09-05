@@ -50,7 +50,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
     <!-- Header-->
     <header class="container-fluid fixed-top">
@@ -170,10 +170,8 @@
     {% endblock %}
 
     <!-- Main Content-->
-    <main class="flex-grow-1">
-        {% block content %}
-        {% endblock %}
-    </main>
+    {% block content %}
+    {% endblock %}
 
     <!-- Footer-->
     {% include 'includes/footer.html' %}
