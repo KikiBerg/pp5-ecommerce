@@ -31,15 +31,10 @@ html, body {
 body {
     background: url('/media/pexels-tatianasyrikova-3934019.jpg') no-repeat center center fixed;
     background-size: cover;
-    /*height: calc(100vh - 164px);*/
+    height: calc(100vh - 164px);
     min-height: 100vh;
     color: var(--color-white);
     font-family: "Reddit Mono", monospace;
-}
-
-body > footer {
-    position: sticky;
-    top: 100vh;
 }
 
 .icon {
