@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html class="h-100" lang="en">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -50,7 +50,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
     <!-- Header-->
     <header class="container-fluid fixed-top">
@@ -170,11 +170,8 @@
     {% endblock %}
 
     <!-- Main Content-->
-    <main class="flex-shrink-0">
-        {% block content %}
-        <!-- Content goes here -->
-        {% endblock %}
-    </main>    
+    {% block content %}
+    {% endblock %}
 
     <!-- Footer-->
     {% include 'includes/footer.html' %}
