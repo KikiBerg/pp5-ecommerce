@@ -46,9 +46,12 @@
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
+
     <!-- Header-->
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -88,14 +91,14 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -108,9 +111,9 @@
                                 <p class="my-0">
                                     Basket
                                     {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
+                                    ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                    $0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -118,6 +121,7 @@
                     </li>
                 </ul>
             </div>
+
         </div>
 
         <!-- Navigation -->
@@ -139,45 +143,45 @@
                 </h6>
             </div>
         </div>
+
     </header>
+    
 
-    <!-- Wrapper for main content and footer -->
-    <div class="flex-grow-1 d-flex flex-column">
-        {% if messages %}
-            <div class="message-container">
-                {% for message in messages %}
-                    {% with message.level as level %}
-                        {% if level == 40 %}
-                            {% include 'includes/toasts/toast_error.html' %}
-                        {% elif level == 30 %}
-                            {% include 'includes/toasts/toast_warning.html' %}
-                        {% elif level == 25 %}
-                            {% include 'includes/toasts/toast_success.html' %}
-                        {% else %}
-                            {% include 'includes/toasts/toast_info.html' %}
-                        {% endif %}
-                    {% endwith %}
-                {% endfor %}
-            </div>
-        {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
-
-        <!-- Main Content-->
-        <main class="flex-grow-1">
-            {% block content %}
-            {% endblock %}
-        </main>
-
-        <!-- Footer-->
-        {% include 'includes/footer.html' %}
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
     </div>
+    {% endif %}
 
-    {% block postloadjs %}
+    {% block page_header %}
+    {% endblock %}
+
+    <!-- Main Content-->
+    <main class="flex-grow-1">
+    {% block content %}
+    {% endblock %}
+    </main>
+
+    <!-- Footer-->
+    {% include 'includes/footer.html' %}
+
+
+    {% block postloadjs %} 
     <script type="text/javascript">
         $('.toast').toast('show');
-    </script>
+    </script>  
     {% endblock %}
 
 </body>
