@@ -50,7 +50,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Header-->
     <header class="container-fluid fixed-top">
@@ -138,51 +138,53 @@
         <!-- Free shipping banner -->
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-offwhite text-green">
-                <h6 class="logo-font my-1"><i class="fa-regular fa-circle-check"></i> Free shipping on seed orders over $
+                <h6 class="logo-font my-1"><i class="fa-regular fa-circle-check"></i> Free shipping on seed orders over
+                    $
                     {{ free_delivery_threshold }}!
                 </h6>
             </div>
         </div>
 
     </header>
-    
 
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
     </div>
     {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+    <div class="flex-grow-1">
 
-    <!-- Main Content-->
-    <main class="flex-grow-1">
-    {% block content %}
-    {% endblock %}
-    </main>
+        {% block page_header %}
+        {% endblock %}
+
+        <!-- Main Content-->
+        {% block content %}
+        {% endblock %}
+    </div>
 
     <!-- Footer-->
     {% include 'includes/footer.html' %}
 
 
-    {% block postloadjs %} 
+    {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
-    </script>  
+    </script>
     {% endblock %}
 
 </body>
+
 </html>
