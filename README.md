@@ -54,7 +54,7 @@ Monospaced fonts, as Reddit Mono, are versatile and can be effectively used for 
 
 - - -
 ## Wireframes
-Here are some wireframes that I created using [Balsamiq](https://balsamiq.com/). As the project was developing I tried to follow the agile method of adjusting the elements, so for that reason some details shown in the wireframes may not match the final result.
+Here are some wireframes that I created using [Balsamiq](https://balsamiq.com/). Note that some details shown in the wireframes may not match the final result. These wireframes act as a primary guide though, and the main structure and elements are depticted as shown here.
 
 > **Homepage**
 <details>
@@ -104,3 +104,62 @@ Here are some wireframes that I created using [Balsamiq](https://balsamiq.com/).
     
 ![post detail page](documentation/readme/wireframes/sesp_wf_faq_desktop.png)
 </details>
+
+> **About page**
+<details>
+<summary>About Desktop</summary>
+    
+![post detail page](documentation/readme/wireframes/sesp_wf_about_desktop.png)
+</details>
+
+- - -
+
+## Agile Development Process
+
+### GitHub Projects
+[GitHub Projects](https://github.com/users/KikiBerg/projects/8) was used as an Agile tool for this project.
+There are probaply more ideal tools out there, but for now it served its purpose.
+I used this tool for planning my user stories & issues, then followed up now and then using the Kanban board. 
+![screenshot](documentation/readme/sesp-userstories-project.png)
+
+### GitHub Issues
+[GitHub Issues](https://github.com/KikiBerg/pp5-ecommerce/issues/) was also used as an Agile tool.
+I created my own **User Story Template** in order to manage the user stories.
+
+- [Open Issues](https://github.com/KikiBerg/pp5-ecommerce/issues?q=is%3Aopen):
+I placed these to a **Backlog** column as they are features that were not prioritized and are seen as possible future implementations.
+
+- [Closed Issues](https://github.com/KikiBerg/pp5-ecommerce/issues?q=is%3Aissue+is%3Aclosed) 
+
+### MoSCoW Prioritization
+
+I've prioritized my user stories using this method and used labels for my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered 
+- **Should Have**: adds significant value, but not vital 
+- **Could Have**: has small impact if left out 
+- **Won't Have**: not a priority for this iteration
+
+- - -
+
+### User Stories
+
+I created the user stories in the beginning of the project so that I could better organize the structure of the site. 
+Some of the stories were adjusted during the working process, so as to better fit my final ideas.
+| Title | User Story | Subcategory | MoSCoW Priority | 
+| --- | --- | --- | --- |
+| View a list of products | As a **shopper**  I want to be able to **view a list of products** so that I can **select some to purchase** | Viewing & Navigation | Must Have |
+| View individual product details | As a **shopper**  I want to be able to **view individual product details** so that I can **identify the price, description, product rating & product** | Viewing & Navigation | Must Have |
+| Comment on Posts | As a **registered user** I want to **comment on posts** so that I can **participate in discussions and provide feedback.** | Must Have |
+| Moderate comments | As a **site admin** I want to **moderate comments, including editing and deleting comments** so that I can **manage community interactions and discussions.** | Must Have |
+| Manage Posts | As a **site admin** I want to **moderate posts, including creating, updating, and deleting posts** so that I can **maintain content quality and relevance.** | Must Have |
+| Create a new post | As a **site admin** I want to **create a new post by entering a title and content** so that I can **share new content with others.** | Must Have |
+| Manage User Accounts | As a **site admin** I want to **manage users, including editing and deleting user accounts** so that I can **ensure the integrity and safety of the community.** | Must Have |
+| Group Posts by Category | As a **registered user** I want to **view posts that belong to a specific category** so that I can **read and explore the content more easily.** | Must Have |
+| Manage Categories | As a **registered user** I want to **manage my own categories, including adding, editing, and deleting categories** so that I can **contribute to the content of the platform.** | Should Have |
+| Manage Categories | As a **site admin** I want to **manage all categories, including adding, editing, and deleting categories** so that I can **organize content effectively.** | Should Have |
+| Search categories | As a **site admin** I want to **search through the various post categories** so that I can **find the posts that I'm more interested in.** | Should Have |
+| Update About Page Content | As a **site admin** I want to **view and edit the About page** so that I can **update information about the website.** | Could Have |
+| View About Page | As a **new user** I want to **view the About page** so that I can **learn more about the website and its purpose.** | Could Have |
+| Search posts | As a **new user** I want to **be able to search for posts by title or content** so that I can **easily find what I'm most interested in.** | Won't Have |
+| Upvote or Downvote Posts | As a **registered user** I want to **be able to upvote or downvote posts** so that I can **express my opinion on the content quality.** | Won't Have |
