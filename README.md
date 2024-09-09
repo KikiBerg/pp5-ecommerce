@@ -502,3 +502,377 @@ To connect to the database:
 - Create a database using the email address used to sign up for the Code Institute LMS.
 - The Database URL is sent to the email address.
 - Add the database URL as a variable to the project and make sure to keep it secret, by e.g. adding it to a .env or env.py file included in .gitignore, and therefore not pushed to your repository or publicly displayed in your code.
+
+### Set up hosting of static and media files with AWS
+
+1.  Sign in or create an account with [Amazon Web Server](https://aws.amazon.com/)
+
+2.  Navigate to the AWS Console home
+
+3.  Search for "s3" in the search bar
+
+4.  Click on "Create bucket"
+
+5.  In the Create bucket page add the following information:
+
+- A name for the bucket. It is recomeneded to use the same name you gave your Heroku app.
+
+- A region closest to you.
+
+- Select ACLs enabled
+
+- Uncheck the "Block all public access" checkbox
+
+- Check the box beside "I acknowledge that the current settings might result in this bucket and the objects within becoming public."
+
+Scroll to the bottom of the page and select "Create bucket"
+
+6.  Click on the new bucket you just created.
+
+7.  In the "Properties" tab scroll to the bottom of the page and in Static website hosting
+click "Edit".
+
+8.  Select "Enable" and paste the following in the the "Redirection rules – optional" at
+the bottom of the page:
+
+```
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+    ],
+    "AllowedMethods": [
+        "GET"
+    ],
+    "AllowedOrigins": [
+        "*"
+    ],
+        "ExposeHeaders": []
+    }
+]
+```
+
+9.  In the "Permissions" tab click on the "Edit" button underneath Bucket policy
+
+10.  Copy the "Bucket ARN" and click on "Policy generator"
+
+11.  On the next page:
+
+- Select "S3 Bucket Policy"
+
+- Add * (an asterisk) as the "Principal" value
+
+- Select "GetObject" in the "Actions" dropdown
+
+- Paste the "Bucket ARN" (from step 10 above) as the Amazon Resource Name (ARN)
+
+- Click "Add Statement" then "Generate Policy"
+
+- Copy the policy shown in the pop-up box
+
+12.  Back in the AWS "Edit bucket policy" paste the policy just copied.
+
+13.  At the end of the resource key but before the closing quotation mark add: 
+```
+/*
+```
+
+and click "Save"
+
+14. On the next page click "Edit" in the "Access control list (ACL)" section.
+
+- Enable "List" for "Everyone (public access)"
+
+- Accept the warning
+
+#### In AWS services menu:
+1. Select "IAM" from the AWS menu and then "User groups" from the menu on the left 
+hand side.
+
+2.  Click the "Create group" button
+
+3.  Give the group a name and click "Next step", then on the next page "Next step" agin.
+
+4.  Click the "Create group" button
+
+5.  Select "Polices" from the menu, then "Create policy" button.
+
+6.  In the JSON tab select "Import managed policy" link
+
+7.  Add "s3" into the search bar, select "AmazonS3FullAccess" and click "Import"
+
+8.  Paste in the Bucket ARN and the Bucket ARN followed by /* as the Resource values
+
+9.  Click "Review policy" and add a name and description and click "Create policy"
+
+10.  Select "Groups" from the menu and select the group you made in Step 3.
+
+11.  Click "Attach policy", search and select the policy just created.
+
+12.  Click "Attach policy"
+
+#### Add a user 
+
+1.  Select "Users" in the menu, then click "Add user"
+
+2.  Add a user name and check the "Programatic access" checkbox for Access type
+
+3.  Select "Next: Permissions"
+
+4.  On the following page check the name of your added user group
+
+5.  Click through the next pages until you can click the "Create user" button
+
+6.  Navigate on user page to 'security credentials'
+
+7. Click on 'Create access key'
+
+8. After they are created click on 'download.csv' file
+
+### Wire up Django
+
+1. Install boto3 and django-storages:
+
+```
+pip3 install boto3
+pip3 install django-storages
+```
+
+2.  Add above to requirements.tct:
+```
+pip3 freeze > requirements.txt
+```
+
+3.  Add "storages", to INSTALLED_APPS in seetings.py
+
+4.  Paste the following in settings.py:
+```
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+    # bucket config
+    AWS_STORAGE_BUCKET_NAME = 'seedandsprout'
+    AWS_S3_REGION_NAME = 'us-east-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+
+5.  Paste the following in settings.py:
+```
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}'
+```
+
+### Google Mail (Gmail) API
+
+This project uses [Gmail](https://mail.google.com/) to handle email communication with users for account verification and order confirmations.
+
+To connect to Gmail API:
+- Create a Gmail (Google) account obtain the API key and connect your project.
+- Log into or sign up for a Google Gmail account.
+- Navigate to "Account Settings" (cog icon) in the top-right corner of Gmail.
+- Select "Accounts and Import".
+- Within the section called "Change account settings", click on the link for Other Google Account settings.
+- From this new page, select "Security" on the left.
+- Select 2-Step Verification to activate and follow the instructions to verify your password and account.
+- Once verified, select "Turn On" 2-factor authentication (2FA).
+- Navigate back to the "Security" page and select "App passwords".
+- This might prompt you once again to confirm your password and account.
+- Select "Mail" as "App Type".
+- Select "Other (Custom name) " for the "device type".
+- Add custom name,  e.g. project’s name.
+- You'll be provided with a 16-character password (API key).
+  - Tip: store this key safely, as you cannot access this key again!
+  - EMAIL_HOST_PASS = user's 16-character API key.
+  - EMAIL_HOST_USER = user's own personal Gmail email address.
+- Add the pass and the host as variables to the project and make sure to keep them secret, by e.g. adding it to a .env or env.py file included in .gitignore, and therefore not pushed to your repository or publicly displayed in your code. 
+
+### Stripe
+
+This project uses [Stripe](https://docs.stripe.com/) to handle the secure payment process in test mode.
+
+To connect to Stripe API:
+- Log into or sign up for a stripe account.
+- Navigate to "Developers" on the top page menu.
+- In the section "API keys", select "Get your test API keys".
+- You will find two keys necessary to connect your project: 
+  - STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
+  - STRIPE_SECRET_KEY = Secret Key (starts with sk)
+- In case users prematurely close the purchase-order page or internet connection fails during payment processing, it is important include Stripe Webhooks.
+- Navigate to "Developers" on the top page menu.
+- In the section "Webhooks", select "Add Endpoint".
+  - Add the webhook URL.
+  - Select "Receive All Events".
+  - Click the button "Add Endpoint" to complete the process.
+  - You will find one key under signing secret.
+    - STRIPE_WH_SECRET = Signing Secret (Wehbook) Key (starts with wh)
+- Install the stripe package and integrate to the Django project by configuring it in the settings.py file.
+- Add the link to [stripe's JavaScript](https://docs.stripe.com/js) in your base html template to make security features from stripe available throughout the website for maximum security.
+- Add core JavaScript from the stripe documentation necessary to [accept a payment](https://docs.stripe.com/payments/accept-a-payment).
+- Stripe elements style is customizable to adhere to the ovarall [style of the website](https://docs.stripe.com/elements/appearance-api).
+- Add the keys as variables to the project and make sure to keep the secret keys secret, by e.g. adding it to a .env or env.py file included in .gitignore, and therefore not pushed to your repository or publicly displayed in your code.
+
+### Heroku
+
+Sign in or create an account with [Heroku](https://www.heroku.com/)
+
+- In the Heroku dashboard use the New tab to create a new app.
+
+- Name the app and choose a region.
+
+- Click on the settings tab and select "Reveal Congig Vars".
+
+  - Add DATABASE_URL with the value of the database URL copied from ElephantSQL
+
+- Enter the following command in to your terminal to install dj_database and psycopg2. These are needed to connect to the database.
+
+```pip3 install dj_database_url==0.5.0 psycopg2```
+
+Followed by ```pip freeze > requirements.txt``` to update requirements.txt.
+
+Add ``` import dj_database_url``` below import os in settings.py
+
+In the DATABASES section of the settings comment out the initial settings and place the following underneath:
+
+```
+DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
+```
+
+Migrate the models to the database using
+```
+ python3 manage.py migrate
+```
+
+Create a superuser and supply a username and password:
+```
+ python3 manage.py createsuperuser
+```
+
+Within the Django admin confirm the email address
+
+Change the DATABSE settings to the following:
+
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
+    }
+```
+
+Install [Gunicorn](https://gunicorn.org/) webserver:
+
+```
+pip3 install gunicorn
+```
+
+Create a file named Procfile in the root of the project and add:
+```
+web: gunicorn 'name-of-your-project'.wsgi:application
+```
+
+Add the required dependencies to requirements.tc with:
+```
+pip3 feeze > requirements
+```
+
+Add the following to settings:
+```
+ALLOWED_HOSTS = ["'name-of-the-website'.herokuapp.com", "localhost"]
+```
+
+Add changes, commit and push to GitHub and Heroku
+```
+git add . 
+git commit -m "Deployment"
+git push
+git push heroku main
+```
+#### Configure your variables in Heroku
+- Click on "Add a new Config Var" and add the necessary keys and values.    
+    - AWS_ACCESS_KEY_ID = with the value of the access key.
+    - AWS_SECRET_ACCESS_KEY with the value of the secret key.
+    - DATABASE_URL with the value of the database URL.
+    - EMAIL_HOST_PASS with the value of the API key.
+    - EMAIL_HOST_USER with the value of the email address.
+    - SECRET_KEY with the value of the secret key.
+    - STRIPE_PUBLIC_KEY with the value of the public key.
+    - STRIPE_SECRET_KEY with the value of the secret key.    
+    - STRIPE_WH_SECRET with the value of the webhook handler secret key.
+    - USE_AWS: this should be set to True
+
+> [!IMPORTANT]
+> Note that all these keys should exist in your env.py file, which in its turn should exist inside the .gitignore file.
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+> [!IMPORTANT] Crucial when working with DEBUG=True during development.
+    
+### Local Deployment
+This project can be cloned or forked in order to make a local copy on your own system.
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+
+#### Steps to clone project
+- Click on the code tab under the repository name.
+- Then click on "Code" button to the right above the files listed.
+- Click on the clipboard icon to copy the URL.
+- Open Git Bash in gitpod or your preferred IDE.
+- Change the working directory to where you want your cloned directory.
+- Type git clone and then paste the URL that you copied.
+- Press enter and clone is complete.
+- In the terminal install the requirements by using the following: `pip3 install -r requirements.txt`
+- Next create the env.py file which tells our project which variables to use.
+- Add the file to a .gitignore to prevent it from being pushed to github
+- Make migrations by running : python manage.py makemigrations
+- Then migrate those changes with python manage.py migrate
+- To run the project type `python manage.py runserver` into the terminal and open port 8000.
+- This will open the project locally for you to work on.
+
+Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
+A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking repository on GitHub
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/KikiBerg/urban-biodiversity-platform)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
