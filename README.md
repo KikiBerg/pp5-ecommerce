@@ -821,7 +821,7 @@ git push heroku main
     - USE_AWS: this should be set to True
 
 > [!IMPORTANT]
-> Note that all these keys should exist in your env.py file, which in its turn should exist inside the .gitignore file.
+> Note that all these keys shoul also exist in your env.py file, which in its turn should exist inside the .gitignore file.
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
@@ -838,7 +838,8 @@ Or:
 
 The project should now be connected and deployed to Heroku!
 
-> [!IMPORTANT] Crucial when working with DEBUG=True during development.
+> [!IMPORTANT]
+> Crucial when working with DEBUG=True during development.
     
 ### Local Deployment
 This project can be cloned or forked in order to make a local copy on your own system.
@@ -876,3 +877,29 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+## Credits
+
+### Code used
+- I looked back to "Boutique Ado" walkthrough material from Code Institute to get help constructing my initial project.
+- [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Django Docs](https://www.djangoproject.com/)
+- Stripe Official documentation for code snippets necessary for implementing the Stripe payment process:
+  - [Core JavaScript functunalities from stripe](https://stripe.com/docs/payments/accept-a-payment).
+  - [Core CSS style from stripe](https://stripe.com/docs/stripe-js)
+
+### Content
+- Details about the seeds are taken from: [Runåbergs Fröer](https://en.runabergsfroer.se/)
+- Rest of the content, e.g the About and FAQ page, was written by myself.
+
+### Media
+I used these sites for the photographic media:
+- [Pexels](https://www.pexels.com/)
+- [Amazon](https://www.amazon.se/)
+- [Ubuy](https://www.ubuy.dk/)
+
+### Acknowledgements
+- My mentors, Sheryl Goldberg & Tim Nelson, for their guidance.
+- The Code Institute Tutor support, for all the help.
+- Thanks to Kristyna Wach, my Cohort facilitator for making sure I had all the material & information needed as well as for her encouragement.
+- The Slack community, for the good advice.
+- My fellow co-student [Gudrun](https://github.com/g-omarsdottir) for her support and willingness to help!
