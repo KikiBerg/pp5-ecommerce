@@ -480,3 +480,25 @@ erDiagram
 |default_county| CharField|max_length=80, null=True, blank=True |
 |default_postcode| CharField|max_length=20, null=True, blank=True |
 |default_country| CountryField|blank_label='Country', null=True, blank=True |
+
+- - -
+
+## Testing
+
+> [!NOTE]  
+> For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+- - -
+
+## Deployment
+The live deployed application can be found deployed on [Heroku](https://seedandsprout-ab1eae7ba537.herokuapp.com/)
+
+### PostgreSQL (Code Institute)
+This project uses [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) for the PostgreSQL Database.
+These are database systems provided by Code Institute for storing and managing application data during the development and deployment process.
+
+To connect to the database:
+- Go to the [Code Institute Database Maker](https://dbs.ci-dbs.net/)
+- Create a database using the email address used to sign up for the Code Institute LMS.
+- The Database URL is sent to the email address.
+- Add the database URL as a variable to the project and make sure to keep it secret, by e.g. adding it to a .env or env.py file included in .gitignore, and therefore not pushed to your repository or publicly displayed in your code.
