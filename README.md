@@ -404,3 +404,79 @@ erDiagram
 |product|ForeignKey|'Product', null=False, blank=False, on_delete=models.CASCADE|
 |quantity|IntegerField|null=False, blank=False, default=0|
 |lineitem_total|DecimalField|max_digits=6, decimal_places=2, null=False, blank=False, editable=False|
+
+**`faqs app`**
+#### FAQ model:
+
+|Database Key|Field Type|Validation|
+|---|---|---|
+|question|CharField|max_length=255|
+|answer|TextField||
+|category|ForeignKey|'Category', on_delete=models.CASCADE, related_name='faqs'|
+|created_at|DateTimeField|auto_now_add=True|
+|updated_at|DateTimeField|auto_now=True|
+
+**`home app`**
+
+- This app has no classes or models, as it primarily focuses on the index page display and function
+
+**`newsletter app`**
+#### Newsletter model:
+
+|Database Key|Field Type|Validation|
+|---|---|---|
+|email|EmailField|unique=True|
+|subscribed_at|DateTimeField|auto_now_add=True|
+|is_active|BooleanField|default=True|
+
+**`products app`**
+#### Category model:
+
+|Database Key|Field Type|Validation|
+|---|---|---|
+|name|CharField|max_length=254, null=True, blank=True|
+|friendly_name|CharField|max_length=254, null=True, blank=True|
+
+#### Product model:
+
+|Database Key|Field Type|Validation|
+|---|---|---|
+|category|ForeignKey|'Category', null=True, blank=True, on_delete=models.SET_NULL|
+|sku|CharField|max_length=254, null=True, blank=True|
+|name|CharField|max_length=254|
+|description|TextField||
+|price|DecimalField|max_digits=6, decimal_places=2|
+|rating|DecimalField|max_digits=6, decimal_places=2, null=True, blank=True|
+|image_url|URLField|max_length=1024, null=True, blank=True|
+|image|ImageField|null=True, blank=True|
+|botanical_name|CharField|max_length=254, null=True, blank=True|
+|is_organic|BooleanField|default=False|
+|days_to_maturity|IntegerField|null=True, blank=True|
+|lifespan|CharField|max_length=50, null=True, blank=True|
+|sowing_season|CharField|max_length=100, null=True, blank=True|
+|sowing_depth|CharField|max_length=50, null=True, blank=True|
+|germination_time|CharField|max_length=100, null=True, blank=True|
+|sunlight_requirement|CharField|max_length=100, null=True, blank=True|
+|water_requirement|CharField|max_length=100, null=True, blank=True|
+|plant_spacing|CharField|max_length=50, null=True, blank=True|
+|row_spacing|CharField|max_length=50, null=True, blank=True|
+|height|CharField|max_length=50, null=True, blank=True|
+|harvest_blooming|CharField|max_length=100, null=True, blank=True|
+|seed_count|IntegerField|null=True, blank=True|
+|instructions|TextField|null=True, blank=True|
+|is_gardening_supply|BooleanField|default=False|
+|dimensions|CharField|max_length=100, null=True, blank=True|
+
+**`profiles app`**
+#### UserProfile model:
+
+|Database Key|Field Type|Validation|
+|---|---|---|
+|user| OneToOneField|'User', on_delete=models.CASCADE|
+|default_phone_number|CharField| max_length=20, null=True, blank=True |
+|default_street_address1|CharField|max_length=80, null=True, blank=True |
+|default_street_address2|CharField|max_length=80, null=True, blank=True |
+|default_town_or_city|CharField|max_length=40, null=True, blank=True |
+|default_county| CharField|max_length=80, null=True, blank=True |
+|default_postcode| CharField|max_length=20, null=True, blank=True |
+|default_country| CountryField|blank_label='Country', null=True, blank=True |
