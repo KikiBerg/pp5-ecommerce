@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://seedandsprout-ab1eae7ba537.herokuapp.com/sitemap.xml

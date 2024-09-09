@@ -149,17 +149,26 @@ Some of the stories were adjusted during the working process, so as to better fi
 | Title | User Story | Subcategory | MoSCoW Priority | 
 | --- | --- | --- | --- |
 | View a list of products | As a **shopper**  I want to be able to **view a list of products** so that I can **select some to purchase** | Viewing & Navigation | Must Have |
-| View individual product details | As a **shopper**  I want to be able to **view individual product details** so that I can **identify the price, description, product rating & product** | Viewing & Navigation | Must Have |
-| Comment on Posts | As a **registered user** I want to **comment on posts** so that I can **participate in discussions and provide feedback.** | Must Have |
-| Moderate comments | As a **site admin** I want to **moderate comments, including editing and deleting comments** so that I can **manage community interactions and discussions.** | Must Have |
-| Manage Posts | As a **site admin** I want to **moderate posts, including creating, updating, and deleting posts** so that I can **maintain content quality and relevance.** | Must Have |
-| Create a new post | As a **site admin** I want to **create a new post by entering a title and content** so that I can **share new content with others.** | Must Have |
-| Manage User Accounts | As a **site admin** I want to **manage users, including editing and deleting user accounts** so that I can **ensure the integrity and safety of the community.** | Must Have |
-| Group Posts by Category | As a **registered user** I want to **view posts that belong to a specific category** so that I can **read and explore the content more easily.** | Must Have |
-| Manage Categories | As a **registered user** I want to **manage my own categories, including adding, editing, and deleting categories** so that I can **contribute to the content of the platform.** | Should Have |
-| Manage Categories | As a **site admin** I want to **manage all categories, including adding, editing, and deleting categories** so that I can **organize content effectively.** | Should Have |
-| Search categories | As a **site admin** I want to **search through the various post categories** so that I can **find the posts that I'm more interested in.** | Should Have |
-| Update About Page Content | As a **site admin** I want to **view and edit the About page** so that I can **update information about the website.** | Could Have |
-| View About Page | As a **new user** I want to **view the About page** so that I can **learn more about the website and its purpose.** | Could Have |
-| Search posts | As a **new user** I want to **be able to search for posts by title or content** so that I can **easily find what I'm most interested in.** | Won't Have |
-| Upvote or Downvote Posts | As a **registered user** I want to **be able to upvote or downvote posts** so that I can **express my opinion on the content quality.** | Won't Have |
+| View individual product details | As a **shopper**  I want to be able to **view individual product details** so that I can **identify the price, description, product rating & product image** | Viewing & Navigation | Must Have |
+| View total of my purchase | As a **shopper**  I want to be able to **easily view the total of my purchases at any time** so that I can **avoid spending too much** | Viewing & Navigation | Must Have |
+| View specific category of products | As a **shopper**  I want to be able to **view a specific category of products** so that I can **quickly find products I'm interested in without having to search through all products** | Viewing & Navigation | Must Have |
+| Register for an account | As a **site user**  I want to be able to **easily register for an account** so that I can **have a personal account & be able to view my profile** | Registration & User Accounts | Should Have |
+| Login & logout | As a **site user**  I want to be able to **easily login & logout** so that I can **access my personal account information** | Registration & User Accounts | Should Have |
+| Recover password | As a **site user**  I want to be able to **easily recover my password in case I forget it** so that I can **recover access to my account** | Registration & User Accounts | Should Have |
+| Email confirmation | As a **site user**  I want to be able to **receive an email confirmation after registering** so that I can **verify that my account registration was successful** | Registration & User Accounts | Should Have |
+| User profile | As a **site user**  I want to be able to **have a personalized user profile** so that I can **view my personal order history, order confirmations & save my payment information** | Registration & User Accounts | Should Have |
+| Sort available products | As a **shopper**  I want to be able to **sort the list of available products** so that I can **easily identify the best rated, best priced & categorically sorted products** | Sorting & Searching | Should Have |
+| Sort specific category | As a **shopper**  I want to be able to **sort a specific category** so that I can **find the best-priced or best-rated product in a specific category or sort the products in that category by name** | Sorting & Searching | Should Have |
+| Sort multiple categories | As a **shopper**  I want to be able to **sort multiple product categories simultaneously** so that I can **find the best-priced or best-rated products across broad categories, such as "Vegetable seeds" or "Organic seeds"** | Sorting & Searching | Should Have |
+| Search by name or description | As a **shopper**  I want to be able to **search for a product by name or description** so that I can **find a specific product I'd like to purchase** | Sorting & Searching | Should Have |
+| Search overview | As a **shopper**  I want to be able to **easily overview what I've searched for & the number of the results** so that I can **quickly decide whether the product I want is available** | Sorting & Searching | Should Have |
+| Select quantity | As a **shopper**  I want to be able to **select the quantity of a product when purchasing it** so that I can **ensure I don't accidentally select the wrong product or quantity** | Purchasing & Checkout | Should Have |
+| View bag items | As a **shopper**  I want to be able to **view my bag items** so that I can **identify the total cost of my purchase and all items I will receive** | Purchasing & Checkout | Should Have |
+| Adjust quantity of specific items | As a **shopper**  I want to be able to **adjust the quantity of specific items in my bag** so that I can **easily make changes to my purchase before checkout** | Purchasing & Checkout | Should Have |
+| Enter payment information | As a **shopper**  I want to be able to **easily enter my payment information** so that I can **checkout effectively** | Purchasing & Checkout | Should Have |
+| Secure information | As a **shopper** I want to be able to **feel my personal & payment info is safe & secure** so that I can **confidently provide the information needed for the purchase** | Purchasing & Checkout | Should Have |
+| Order confirmation | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made mistakes** | Purchasing & Checkout | Should Have |
+| Add a product | As a **store owner** I want to be able to **add a product** so that I can **add new items to my store** | Admin & Store Management | Must Have |
+| Update a product | As a **store owner** I want to be able to **update a product** so that I can **change product prices, descriptions, images & other criteria** | Admin & Store Management | Must Have |
+| Delete a product | As a **store owner** I want to be able to **delete a product** so that I can **remove items that are no longer for sale** | Admin & Store Management | Must Have |
+| Delete a product | As a **store owner** I want to be able to **delete a product** so that I can **remove items that are no longer for sale** | Admin & Store Management | Must Have |
