@@ -177,7 +177,36 @@ Some of the stories were adjusted during the working process, so as to better fi
 | Delete FAQs list | As a **site admin** I want to be able to **delete FAQs** so that I can **remove questions that are no longer for relevant** | Viewing & Navigation | Must Have |
 
 - - -
+## Web Marketing
 
+### Ecommerce Business Model
+
+#### Products models
+
+#### Contact Form Model
+
+#### About Us Model
+
+#### FAQ Model
+
+#### Resources Model
+
+
+### Marketing strategies
+
+#### Social Media & Newsletter Marketing
+
+### Search Engine Optimization (SEO)
+
+#### Keywords
+
+#### Keywords Implementation
+
+#### Sitemap
+
+#### Robots.txt
+
+- - -
 ## Features
 
 ### Existing Features
@@ -229,6 +258,9 @@ Some of the stories were adjusted during the working process, so as to better fi
     + [Sitemap Generator](https://www.xml-sitemaps.com/) was used to create the sitemap.xml file.
     + [Balsamiq](https://balsamiq.com/) - Used to create wireframes and website structure map for the project.
     + [LightHouse](https://developer.chrome.com/docs/lighthouse/overview/) - Used for testing performance.
+    + [Fontawesome](https://fontawesome.com/) for icons
+    + [Google Fonts](https://fonts.google.com/) for the website fonts
+    + [Coolors](https://coolors.co) to generate my colour palette
 
 - - -
 
