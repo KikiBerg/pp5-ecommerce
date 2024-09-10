@@ -108,16 +108,45 @@ File | Screenshot | Notes |
 
 Page | Screenshot | Notes |
 | --- | --- | --- |
+| **Homepage** | ![screenshot](#) | Passed. No warnings or errors |
+| **Products page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Products add page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Products edit page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Products delete page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Products detail page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Bag page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Checkout page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Checkout success page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Faqs page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Faqs add page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Faqs edit page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Faqs delete page** | ![screenshot](#) | Passed. No warnings or errors |
+| **About page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Profile page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Signup page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Signin page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Signout page** | ![screenshot](#) | Passed. No warnings or errors |
 
 #### W3C CSS Validator
 
 File | Screenshot | Notes |
 | --- | --- | --- |
+| **base.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **bag.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **checkout.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **faqs.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **home.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **products.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **product_detail.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **profile.css** | ![screenshot](#) | Passed. No warnings or errors |
 
 #### JSHint Javascript Validator
 
 File | Screenshot | Notes |
 | --- | --- | --- |
+| **stripe_elements.js** | ![screenshot](#) | Passed. No warnings or errors |
+| **accordion.js** | ![screenshot](#) | Passed. No warnings or errors |
+| **countryfield.js** | ![screenshot](#) | Passed. No warnings or errors |
 
 - - -
 
