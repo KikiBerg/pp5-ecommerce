@@ -32,6 +32,11 @@ def edit_faq(request, faq_id):
         return redirect(reverse('home'))
 
     faq = get_object_or_404(FAQ, id=faq_id)
+    original_faq = {
+        'question': faq.question,
+        'answer': faq.answer,
+        'category': faq.category
+    }
 
     if request.method == 'POST':
         if 'confirm' in request.POST:
@@ -46,10 +51,9 @@ def edit_faq(request, faq_id):
             # This is the initial POST with the edited data
             form = FAQForm(request.POST, instance=faq)
             if form.is_valid():
-                # Pass both the original FAQ and the form with updated data
                 return render(request, 'faqs/edit_faq_confirm.html', {
                     'form': form,
-                    'faq': faq,
+                    'original_faq': original_faq,
                     'updated_faq': form.cleaned_data
                 })
     else:
