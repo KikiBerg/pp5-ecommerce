@@ -9,8 +9,12 @@ def newsletter_signup(request):
         form = NewsletterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You have successfully subscribed to our newsletter!')
+            messages.success(
+                request,
+                'You have successfully subscribed to our newsletter!'
+            )
             return redirect('home')
     else:
         form = NewsletterForm()
+
     return render(request, 'newsletter/signup.html', {'form': form})

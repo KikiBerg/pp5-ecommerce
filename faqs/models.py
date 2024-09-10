@@ -5,7 +5,9 @@ from products.models import Category
 class FAQ(models.Model):
     question = models.CharField(max_length=255)
     answer = models.TextField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='faqs')
+    category = models.ForeignKey(
+        Category, on_delete=models.CASCADE, related_name='faqs'
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

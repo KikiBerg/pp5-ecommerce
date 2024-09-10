@@ -10,6 +10,7 @@ def faq_list(request):
     categories = Category.objects.all()
     return render(request, 'faqs/faq_list.html', {'categories': categories})
 
+
 @login_required
 def add_faq(request):
     if not request.user.is_superuser:
@@ -24,6 +25,7 @@ def add_faq(request):
     else:
         form = FAQForm()
     return render(request, 'faqs/faq_form.html', {'form': form})
+
 
 @login_required
 def edit_faq(request, faq_id):
@@ -60,6 +62,7 @@ def edit_faq(request, faq_id):
         form = FAQForm(instance=faq)
 
     return render(request, 'faqs/faq_form.html', {'form': form, 'faq': faq})
+
 
 @login_required
 def delete_faq(request, faq_id):
