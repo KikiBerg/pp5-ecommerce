@@ -144,9 +144,9 @@ File | Screenshot | Notes |
 
 File | Screenshot | Notes |
 | --- | --- | --- |
-| **stripe_elements.js** | ![screenshot](#) | Passed. No warnings or errors |
-| **accordion.js** | ![screenshot](#) | Passed. No warnings or errors |
-| **countryfield.js** | ![screenshot](#) | Passed. No warnings or errors |
+| **stripe_elements.js** | ![screenshot](documentation/testing/validation/val-js-stripe_elements.png) | Warnings about: 'const', 'let in ES6', 'arrow function syntax', 'template literal syntax in ES6'. I ignored these warnings. |
+| **accordion.js** | ![screenshot](documentation/testing/validation/val-js-accordion.png) | Warnings about: 'const', 'let in ES6', 'arrow function syntax', 'template literal syntax in ES6'. I ignored these warnings. |
+| **countryfield.js** | ![screenshot](documentation/testing/validation/val-js-countryfield.png) | Warnings about: 'const', 'let in ES6', 'arrow function syntax', 'template literal syntax in ES6'. I ignored these warnings. |
 
 - - -
 
@@ -186,10 +186,11 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 I have tested my deployed project on two different browsers to check for compatibility issues. I could not find any issues.
 
-| Browser | Main page |
-| --- | --- |
-| Chrome | ![screenshot](documentation/testing/browsercomp/browser-chrome.png) | 
-| Edge | ![screenshot](documentation/testing/browsercomp/browser-edge.png) | 
+## Browser Compatibility
+|  Browser | Links  | Pages  | Responsivnes  | Form fields  |
+| --- | --- | --- | --- | --- |
+|  Chrome | Works as expected  |  Loading pages no issue | Responsivness works as expected  | Works as expected  |
+|  Edge |  Works as expected | Loading pages no issue  | Responsivness works as expected  |  Works as expected |
 
 - - -
 

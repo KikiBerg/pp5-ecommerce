@@ -15,15 +15,8 @@
     --toast-error: #da664c;
 }
 
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -37,7 +30,7 @@ body {
     font-family: "Reddit Mono", monospace;
 }
 
-body > footer {
+body>footer {
     position: sticky;
     top: 100vh;
 }
@@ -212,7 +205,7 @@ body > footer {
 /* -------------------------------- Dotted lines */
 .dotted-line {
     flex-grow: 1;
-    border-bottom: 1px dotted var(--color-grey);   
+    border-bottom: 1px dotted var(--color-grey);
     margin: 0 10px;
     align-self: flex-end;
     position: relative;
@@ -223,7 +216,8 @@ body > footer {
     align-items: baseline;
 }
 
-.d-flex > span, .d-flex > strong {
+.d-flex>span,
+.d-flex>strong {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -232,7 +226,7 @@ body > footer {
 .footer {
     background-color: var(--primary-black);
     color: var(--primary-offwhite);
-    padding: 10px 0;    
+    padding: 10px 0;
     bottom: 0;
     width: 100%;
     /*flex-shrink: 0;
@@ -290,7 +284,7 @@ input[name='q']::placeholder {
     /*overflow: visible;*/
     background-color: var(--primary-offwhite);
     color: var(--primary-black);
-    border-left: 4px solid;   
+    border-left: 4px solid;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     overflow: hidden;
@@ -376,7 +370,7 @@ input[name='q']::placeholder {
 
 /* Toast types */
 .custom-toast.success {
-    border-color: var(--toast-success);    
+    border-color: var(--toast-success);
 }
 
 .custom-toast.info {
@@ -410,7 +404,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    color: var(--color-grey); 
+    color: var(--color-grey);
 }
 
 .allauth-form-inner-content input {
@@ -428,8 +422,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: var(--color-white);
     text-align: center;
@@ -438,7 +432,7 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color:  var(--primary-black);
+    background-color: var(--primary-black);
     border: 1px solid var(--primary-black);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -446,18 +440,19 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: var(--color-white);
-    background-color:  var(--primary-black);
+.allauth-form-inner-content input[type='submit']:hover {
+    color: var(--color-white);
+    background-color: var(--primary-black);
     border-color: var(--primary-black);
 }
 
 .allauth-form-inner-content a {
-	color: var(--toast-info); /* text-info */
+    color: var(--toast-info);
+    /* text-info */
 }
 
 /* -------------------------------- Product Form */
@@ -483,7 +478,7 @@ input[name='q']::placeholder {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color:var(--toast-error);
+    background-color: var(--toast-error);
     border-color: var(--toast-error);
     border-radius: 0;
 }
