@@ -156,6 +156,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 | Page | Screenshot |
 | --- | --- | 
+| **about** | ![screenshot](documentation/testing/lighthouse/sesp-lh-about.png) | 
 
 - - -
 
