@@ -157,6 +157,24 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 | Page | Screenshot |
 | --- | --- | 
 | **about** | ![screenshot](documentation/testing/lighthouse/sesp-lh-about.png) | 
+| **accounts login** | ![screenshot](documentation/testing/lighthouse/sesp-lh-accounts_login.png) | 
+| **accounts logout** | ![screenshot](documentation/testing/lighthouse/sesp-lh-accounts_logout.png) | 
+| **accounts signup** | ![screenshot](documentation/testing/lighthouse/sesp-lh-accounts_signup.png) | 
+| **bag** | ![screenshot](documentation/testing/lighthouse/sesp-lh-bag.png) | 
+| **checkout_success** | ![screenshot](documentation/testing/lighthouse/sesp-lh-checkout_success.png) |
+| **checkout** | ![screenshot](documentation/testing/lighthouse/sesp-lh-checkout.png) |
+| **faqs_add** | ![screenshot](documentation/testing/lighthouse/sesp-lh-faqs_add.png) |
+| **faqs_delete** | ![screenshot](documentation/testing/lighthouse/sesp-lh-faqs_delete.png) |
+| **faqs_edit** | ![screenshot](documentation/testing/lighthouse/sesp-lh-faqs_edit.png) |
+| **faqs** | ![screenshot](documentation/testing/lighthouse/sesp-lh-faqs.png) |
+| **home** | ![screenshot](documentation/testing/lighthouse/sesp-lh-home.png) |
+| **newsletter_signup.png** | ![screenshot](documentation/testing/lighthouse/sesp-lh-newsletter_signup.png) |
+| **products_add** | ![screenshot](documentation/testing/lighthouse/sesp-lh-products_add.png) |
+| **products_delete** | ![screenshot](documentation/testing/lighthouse/sesp-lh-products_delete.png) |
+| **products_detail** | ![screenshot](documentation/testing/lighthouse/sesp-lh-products_detail.png) |
+| **products_edit** | ![screenshot](documentation/testing/lighthouse/sesp-lh-products_edit.png) |
+| **products** | ![screenshot](documentation/testing/lighthouse/sesp-lh-products.png) |
+| **profile** | ![screenshot](documentation/testing/lighthouse/sesp-lh-profile.png) |
 
 - - -
 
