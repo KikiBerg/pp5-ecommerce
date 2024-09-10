@@ -6,6 +6,10 @@ from newsletter.forms import NewsletterForm
 
 
 def about_view(request):
+    """
+    Renders the most recent information on the website author
+    and allows user contact requests
+    """
     about_content = About.objects.first()
     contact_form = ContactForm()
     newsletter_form = NewsletterForm()
@@ -22,11 +26,18 @@ def about_view(request):
             newsletter_form = NewsletterForm(request.POST)
             if newsletter_form.is_valid():
                 newsletter_form.save()
-                messages.success(request, 'You have successfully subscribed to our newsletter!')
+                messages.success(
+                    request,
+                    'You have successfully subscribed to our newsletter!'
+                )
                 return redirect('about:about')
 
-    return render(request, 'about/about.html', {
-        'about_content': about_content,
-        'contact_form': contact_form,
-        'newsletter_form': newsletter_form,
-    })
+    return render(
+        request,
+        'about/about.html',
+        {
+            'about_content': about_content,
+            'contact_form': contact_form,
+            'newsletter_form': newsletter_form,
+        }
+    )

@@ -46,7 +46,12 @@ def edit_faq(request, faq_id):
             # This is the initial POST with the edited data
             form = FAQForm(request.POST, instance=faq)
             if form.is_valid():
-                return render(request, 'faqs/edit_faq_confirm.html', {'form': form, 'faq': faq})
+                # Pass both the original FAQ and the form with updated data
+                return render(request, 'faqs/edit_faq_confirm.html', {
+                    'form': form,
+                    'faq': faq,
+                    'updated_faq': form.cleaned_data
+                })
     else:
         form = FAQForm(instance=faq)
 
