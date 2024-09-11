@@ -83,26 +83,25 @@ File | Screenshot | Notes |
 | products/forms.py | ![screenshot](documentation/testing/validation/sesp-val-products-forms.png) | Passed. No warnings or errors |
 | products/models.py | ![screenshot](documentation/testing/validation/sesp-val-products-models.png) | Passed. No warnings or errors |
 | products/urls.py | ![screenshot](documentation/testing/validation/sesp-val-products-urls.png) | Passed. No warnings or errors |
-| products/views.py | ![screenshot](documentation/testing/validation/val-pl-about-views.png) | Passed. No warnings or errors |
-| products/widgets.py | ![screenshot](documentation/testing/validation/val-pl-about-views.png) | Passed. No warnings or errors |
+| products/views.py | ![screenshot](documentation/testing/validation/sesp-val-products-views.png) | Passed. No warnings or errors |
+| products/widgets.py | ![screenshot](documentation/testing/validation/sesp-val-products-widgets.png) | Passed. No warnings or errors |
 
 **`profiles app`**
 File | Screenshot | Notes |
 | --- | --- | --- | 
-| profiles/admin.py | ![screenshot](documentation/testing/validation/val-pl-about-admin.png) | Passed. No warnings or errors |
-| profiles/apps.py | ![screenshot](documentation/testing/validation/val-pl-about-apps.png) | Passed. No warnings or errors |
-| profiles/forms.py | ![screenshot](documentation/testing/validation/val-pl-about-forms.png) | Passed. No warnings or errors |
-| profiles/models.py | ![screenshot](documentation/testing/validation/val-pl-about-models.png) | Passed. No warnings or errors |
-| profiles/urls.py | ![screenshot](documentation/testing/validation/val-pl-about-urls.png) | Passed. No warnings or errors |
-| profiles/views.py | ![screenshot](documentation/testing/validation/val-pl-about-views.png) | Passed. No warnings or errors |
+| profiles/apps.py | ![screenshot](documentation/testing/validation/sesp-val-profiles-apps.png) | Passed. No warnings or errors |
+| profiles/forms.py | ![screenshot](documentation/testing/validation/sesp-val-profiles-forms.png) | Passed. No warnings or errors |
+| profiles/models.py | ![screenshot](documentation/testing/validation/sesp-val-profiles-models.png) | Passed. No warnings or errors |
+| profiles/urls.py | ![screenshot](documentation/testing/validation/sesp-val-profiles-urls.png) | Passed. No warnings or errors |
+| profiles/views.py | ![screenshot](documentation/testing/validation/sesp-val-profiles-views.png) | Passed. No warnings or errors |
 
 **`seed_and_sprout`**
 File | Screenshot | Notes |
 | --- | --- | --- | 
-| settings.py | ![screenshot](documentation/testing/validation/val-pl-settings.png) | Passed. No warnings or errors |
-| urls.py | ![screenshot](documentation/testing/validation/val-pl-urls.png) | Passed. No warnings or errors |
-| views.py | ![screenshot](documentation/testing/validation/val-pl-urls.png) | Passed. No warnings or errors |
-| wsgi.py | ![screenshot](documentation/testing/validation/val-pl-wsgi.png) | Passed. No warnings or errors |
+| settings.py | ![screenshot](documentation/testing/validation/sesp-val-settings.png) | Passed. No warnings or errors |
+| urls.py | ![screenshot](documentation/testing/validation/sesp-val-urls.png) | Passed. No warnings or errors |
+| views.py | ![screenshot](documentation/testing/validation/sesp-val-views.png) | Passed. No warnings or errors |
+| wsgi.py | ![screenshot](documentation/testing/validation/sesp-val-wsgi.png) | Passed. No warnings or errors |
 
 #### W3C HTML Validator
 
@@ -380,7 +379,6 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 I have tested my deployed project on two different browsers to check for compatibility issues. I could not find any issues.
 
-## Browser Compatibility
 |  Browser | Links  | Pages  | Responsivnes  | Form fields  |
 | --- | --- | --- | --- | --- |
 |  Chrome | Works as expected  |  Loading pages no issue | Responsivness works as expected  | Works as expected  |
