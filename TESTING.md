@@ -181,7 +181,6 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ### Responsiveness
 - I have tested my deployed project on multiple devices to check for responsiveness issues. No issues were found.
 - Apart from the Chrome Devtools, I've used [this site](https://techsini.com/multi-mockup/index.php) to quickly check responsiveness on different devices and get screenshots for the testing.md file.
-- For the pages that are profile and authentication safe, I needed to take the screenshots myself as the links would not appear on techsini site.
 
 `Home Page`
 | Screenshot | Notes |
@@ -228,9 +227,151 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 | --- | --- |
 | ![screenshot](documentation/testing/responsiveness/val-resp-404.png)| Works as expected |
 
+- For the pages that are profile and authentication safe, I needed to take the screenshots myself as the links would not appear on techsini site.
+- I took fullsize screenshots on small and medium screens.
 
+`Bag Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
 
+![post detail page](documentation/testing/responsiveness/val-resp-bag-mob.png)
+</details>
 
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-bag-ipad.png)
+</details>
+
+`Checkout Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-checkout-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-checkout-ipad.png)
+</details>
+
+`Checkout Success Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-checkout_success-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-checkout_success-ipad.png)
+</details>
+
+`Product Add Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-products_add-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-products_add-ipad.png)
+</details>
+
+`Product Edit Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-products_edit-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-products_edit-ipad.png)
+</details>
+
+`Product Delete Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-products_delete-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-products_delete-ipad.png)
+</details>
+
+`Faqs Add Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![faqs add page](documentation/testing/responsiveness/val-resp-faqs_add-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_add-ipad.png)
+</details>
+
+`Faqs Edit Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_edit-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_edit-ipad.png)
+</details>
+
+`Faqs Edit Confirm Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_edit_confirm-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_edit_confirm-ipad.png)
+</details>
+
+`Faqs Delete Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_delete-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-faqs_delete-ipad.png)
+</details>
+
+`Profile Page`
+<details>
+<summary>Small (IPhone 12 Pro)</summary>
+
+![post detail page](documentation/testing/responsiveness/val-resp-profile-mob.png)
+</details>
+
+<details>
+<summary>Medium (IPad Air)</summary>
+    
+![post detail page](documentation/testing/responsiveness/val-resp-profile-ipad.png)
+</details>
 
 - - -
 
