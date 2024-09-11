@@ -393,32 +393,38 @@ I have tested my deployed project on two different browsers to check for compati
 ### Testing Purchase Procedure
 Action |  Expected result | Pass
 --- | --- | :---:
-Click on the navigation 'products' |  Dropdown menu appears with different categories | &check;
-Click on 'all products' |  All products are displayed on the page | &check;
-Pick product, click on image |  Single product is displayed on the page with description | &check;
+Click on 'All Products' |  All products are displayed on the page | &check;
+Choose product, click on image or 'More Info' button |  Single product is displayed on the page with description & specifications | &check;
 Click + on quantity |  Quantity of product increases | &check;
 Click - on quantity |  Quantity of product decreases | &check;
-Click on sizes if applicible |  Picked size is displayed in the box| &check;
 Click 'add to bag' |  Product is added to shopping bag, success message is shown to the user | &check;
 Click on the 'basket' icon in the navigation menu|  Redirected to shopping bag template, with products in it | &check;
 Click + on quantity |  Quantity of product increases | &check;
 Click - on quantity |  Quantity of product decreases | &check;
-Click 'update' |  Quantity of products have been updated | &check;
+Click 'refresh' icon |  Quantity of products have been updated | &check;
 To remove product, click 'remove'|  Product is removed from shopping bag| &check;
-Click 'secure checkout'|  Redirected to checkout page | &check;
+Click 'checkout'|  Redirected to checkout page | &check;
 Fill in all form details |  No errors displayed on the form | &check;
-In payment section input 42 and repeat all the way to the end & click complete order | Payment went through, preview of purchase is displayed | &check;
-Click on download pdf |  PDF receipt is downloaded  | &check;
+In payment section input 4242 4242 4242 4242 and random date, cvc, zip & click complete order button | Payment went through, preview of purchase is displayed | &check;
 Check email |  Email comfirmation has been sent | &check;
-<details><summary>Order comfirmation</summary>
-<img src="#">
+<details>
+<summary>Order comfirmation</summary>
+    
+![order comfirmation](documentation/testing/purchase/sesp-order_conf.png)
 </details>
-<details><summary>Stripe</summary>
-<img src="#">
+
+<details>
+<summary>Stripe</summary>
+    
+![order comfirmation](documentation/testing/purchase/sesp-stripe_conf.png)
 </details>
-<details><summary>Email comformation</summary>
-<img src="#">
+
+<details>
+<summary>Email comfirmation</summary>
+    
+![order comfirmation](documentation/testing/purchase/sesp-email_conf.png)
 </details>
+
 
 ### Testing User Stories
 Here's a table for testing the various user stories of the project. The aim is to follow up the functionality implementation.
