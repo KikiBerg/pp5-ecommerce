@@ -131,14 +131,14 @@ Page | Screenshot | Notes |
 
 File | Screenshot | Notes |
 | --- | --- | --- |
-| **base.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **bag.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **checkout.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **faqs.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **home.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **products.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **product_detail.css** | ![screenshot](#) | Passed. No warnings or errors |
-| **profile.css** | ![screenshot](#) | Passed. No warnings or errors |
+| **base.css** | ![screenshot](documentation/testing/validation/val-css-base.png) | Passed. No errors |
+| **bag.css** | ![screenshot](documentation/testing/validation/val-css-bag.png) | Passed. No errors |
+| **checkout.css** | ![screenshot](documentation/testing/validation/val-css-checkout.png) | Passed. No errors |
+| **faqs.css** | ![screenshot](documentation/testing/validation/val-css-faqs.png) | Passed. No errors |
+| **home.css** | ![screenshot](documentation/testing/validation/val-css-home.png) | Passed. No errors |
+| **products.css** | ![screenshot](documentation/testing/validation/val-css-products.png) | Passed. No errors |
+| **product_detail.css** | ![screenshot](documentation/testing/validation/val-css-products_detail.png) | Passed. No errors |
+| **profile.css** | ![screenshot](documentation/testing/validation/val-css-profile.png) | Passed. No errors |
 
 #### JSHint Javascript Validator
 
