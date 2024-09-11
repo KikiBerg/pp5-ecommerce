@@ -10,7 +10,8 @@ class NewsletterForm(forms.ModelForm):
             'email': forms.EmailInput(
                 attrs={
                     'class': 'form-control',
-                    'placeholder': 'Enter your email'
+                    'placeholder': 'Enter your email',
+                    'id': 'id_newsletter_email'
                 }
             )
         }
