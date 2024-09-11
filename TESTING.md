@@ -179,6 +179,58 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 - - -
 
 ### Responsiveness
+- I have tested my deployed project on multiple devices to check for responsiveness issues. No issues were found.
+- Apart from the Chrome Devtools, I've used [this site](https://techsini.com/multi-mockup/index.php) to quickly check responsiveness on different devices and get screenshots for the testing.md file.
+- For the pages that are profile and authentication safe, I needed to take the screenshots myself as the links would not appear on techsini site.
+
+`Home Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-home.png)| Works as expected |
+
+`Products Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-products.png)| Works as expected |
+
+`Products detail Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-products_detail.png)| Works as expected |
+
+`Faqs Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-faqs.png)| Works as expected |
+
+`About Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-about.png)| Works as expected |
+
+`Newsletter Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-newsletter.png)| Works as expected |
+
+`Login Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-login.png)| Works as expected |
+
+`Sign up Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-signup.png)| Works as expected |
+
+`404 Page`
+| Screenshot | Notes |
+| --- | --- |
+| ![screenshot](documentation/testing/responsiveness/val-resp-404.png)| Works as expected |
+
+
+
+
 
 - - -
 
