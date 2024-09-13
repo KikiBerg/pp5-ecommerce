@@ -446,19 +446,18 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Search overview | As a **shopper**  I want to be able to **easily overview what I've searched for & the number of the results** so that I can **quickly decide whether the product I want is available** |![screenshot](documentation/testing/userstories/sesp-ustest-14.png) |
 | Select quantity | As a **shopper**  I want to be able to **select the quantity of a product when purchasing it** so that I can **ensure I don't accidentally select the wrong product or quantity** |![screenshot](documentation/testing/userstories/sesp-ustest-15.png) |
 | View bag items | As a **shopper**  I want to be able to **view my bag items** so that I can **identify the total cost of my purchase and all items I will receive** |![screenshot](documentation/testing/userstories/sesp-ustest-16.png) |
-| Adjust quantity of specific items | As a **shopper**  I want to be able to **adjust the quantity of specific items in my bag** so that I can **easily make changes to my purchase before checkout** |![screenshot](#) |
-| Enter payment information | As a **shopper**  I want to be able to **easily enter my payment information** so that I can **checkout effectively** |![screenshot](#) |
-| Secure information | As a **shopper** I want to be able to **feel my personal & payment info is safe & secure** so that I can **confidently provide the information needed for the purchase** |![screenshot](#) |
-| Order confirmation | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made mistakes** |![screenshot](#) |
-| Add a product | As a **store owner** I want to be able to **add a product** so that I can **add new items to my store** |![screenshot](#) |
-| Update a product | As a **store owner** I want to be able to **update a product** so that I can **change product prices, descriptions, images & other criteria** |![screenshot](#) |
-| Delete a product | As a **store owner** I want to be able to **delete a product** so that I can **remove items that are no longer for sale** |![screenshot](#) |
-| Subscribe to newsletter | As a **site user** I want to be able to **subscribe to a newsletter by providing my email address** so that I can **get updates about new products** |![screenshot](#) |
-| Manage subscriber list | As a **site admin** I want to be able to **view and manage the list of newsletter subscribers** so that I can **send newsletters periodically** |![screenshot](#) |
-| View FAQs list | As a **site user** I want to be able to **view a list of FAQs grouped by categories** so that I can **more easily find answers to my questions** |![screenshot](#) |
-| Add FAQs list | As a **site admin** I want to be able to **add new FAQs** so that I can **follow up questions from customers** |![screenshot](#) |
-| Update FAQs list | As a **site admin** I want to be able to **edit existing FAQs** so that I can **keep the section up to date** |![screenshot](#) |
-| Delete FAQs list | As a **site admin** I want to be able to **delete FAQs** so that I can **remove questions that are no longer for relevant** |![screenshot](#) |
+| Adjust quantity of specific items | As a **shopper**  I want to be able to **adjust the quantity of specific items in my bag** so that I can **easily make changes to my purchase before checkout** |![screenshot](documentation/testing/userstories/sesp-ustest-17.png) |
+| Enter payment information | As a **shopper**  I want to be able to **easily enter my payment information** so that I can **checkout effectively** |![screenshot](documentation/testing/userstories/sesp-ustest-18.png) |
+| Order confirmation | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made mistakes** |![screenshot](documentation/testing/userstories/sesp-ustest-19.png) |
+| Add a product | As a **store owner** I want to be able to **add a product** so that I can **add new items to my store** |![screenshot](documentation/testing/userstories/sesp-ustest-20.png) |
+| Update a product | As a **store owner** I want to be able to **update a product** so that I can **change product prices, descriptions, images & other criteria** |![screenshot](documentation/testing/userstories/sesp-ustest-21.png) |
+| Delete a product | As a **store owner** I want to be able to **delete a product** so that I can **remove items that are no longer for sale** |![screenshot](documentation/testing/userstories/sesp-ustest-22.png) |
+| Subscribe to newsletter | As a **site user** I want to be able to **subscribe to a newsletter by providing my email address** so that I can **get updates about new products** |![screenshot](documentation/testing/userstories/sesp-ustest-23.png) |
+| Manage subscriber list | As a **site admin** I want to be able to **view and manage the list of newsletter subscribers** so that I can **send newsletters periodically** |![screenshot](documentation/testing/userstories/sesp-ustest-24.png) |
+| View FAQs list | As a **site user** I want to be able to **view a list of FAQs grouped by categories** so that I can **more easily find answers to my questions** |![screenshot](documentation/testing/userstories/sesp-ustest-25.png) |
+| Add FAQs list | As a **site admin** I want to be able to **add new FAQs** so that I can **follow up questions from customers** |![screenshot](documentation/testing/userstories/sesp-ustest-26.png) |
+| Update FAQs list | As a **site admin** I want to be able to **edit existing FAQs** so that I can **keep the section up to date** |![screenshot](documentation/testing/userstories/sesp-ustest-27.png) |
+| Delete FAQs list | As a **site admin** I want to be able to **delete FAQs** so that I can **remove questions that are no longer for relevant** |![screenshot](documentation/testing/userstories/sesp-ustest-28.png) |
 
 - - -
 
