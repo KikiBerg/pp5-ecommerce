@@ -34,6 +34,7 @@ File | Screenshot | Notes |
 | bag/contexts.py | ![screenshot](documentation/testing/validation/sesp-val-bag-contexts.png) | Passed. No warnings or errors |
 | bag/urls.py | ![screenshot](documentation/testing/validation/sesp-val-bag-urls.png) | Passed. No warnings or errors |
 | bag/views.py | ![screenshot](documentation/testing/validation/sesp-val-bag-views.png) | Passed. No warnings or errors |
+| bag/views.py | ![screenshot](documentation/testing/validation/sesp-val-bag-bag_tools.png) | Passed. No warnings or errors |
 
 **`checkout app`**
 File | Screenshot | Notes |
