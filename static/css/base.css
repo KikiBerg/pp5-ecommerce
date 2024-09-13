@@ -84,7 +84,7 @@ body>footer {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: var(--primary-yellow);
-    color: var(--color-white) !important;
+    color: var(--primary-black) !important;
 }
 
 .shop-now-button:hover,
