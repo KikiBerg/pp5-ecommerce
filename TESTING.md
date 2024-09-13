@@ -439,3 +439,5 @@ Here's a table for testing the various user stories of the project. The aim is t
 - - -
 
 ### Bugs
+I am not sure if these can be identified as a bugs, but wanted to document them here in order to avoid confusion:
+- On product detail page, the decrement button only starts working normally after entering a value manually. 
