@@ -430,6 +430,35 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 | Title | User Story | Response | 
 | --- | --- | --- |
+| View a list of products | As a **shopper**  I want to be able to **view a list of products** so that I can **select some to purchase** |![screenshot](#) |
+| View individual product details | As a **shopper**  I want to be able to **view individual product details** so that I can **identify the price, description, product rating & product image** |![screenshot](#) |
+| View total of my purchase | As a **shopper**  I want to be able to **easily view the total of my purchases at any time** so that I can **avoid spending too much** |![screenshot](#) |
+| View specific category of products | As a **shopper**  I want to be able to **view a specific category of products** so that I can **quickly find products I'm interested in without having to search through all products** |![screenshot](#) |
+| Register for an account | As a **site user**  I want to be able to **easily register for an account** so that I can **have a personal account & be able to view my profile** |![screenshot](#) |
+| Login & logout | As a **site user**  I want to be able to **easily login & logout** so that I can **access my personal account information** |![screenshot](#) |
+| Recover password | As a **site user**  I want to be able to **easily recover my password in case I forget it** so that I can **recover access to my account** |![screenshot](#) |
+| Email confirmation | As a **site user**  I want to be able to **receive an email confirmation after registering** so that I can **verify that my account registration was successful** |![screenshot](#) |
+| User profile | As a **site user**  I want to be able to **have a personalized user profile** so that I can **view my personal order history, order confirmations & save my payment information** |![screenshot](#) |
+| Sort available products | As a **shopper**  I want to be able to **sort the list of available products** so that I can **easily identify the best rated, best priced & categorically sorted products** |![screenshot](#) |
+| Sort specific category | As a **shopper**  I want to be able to **sort a specific category** so that I can **find the best-priced or best-rated product in a specific category or sort the products in that category by name** |![screenshot](#) |
+| Sort multiple categories | As a **shopper**  I want to be able to **sort multiple product categories simultaneously** so that I can **find the best-priced or best-rated products across broad categories** | ![screenshot](#) |
+| Search by name or description | As a **shopper**  I want to be able to **search for a product by name or description** so that I can **find a specific product I'd like to purchase** |![screenshot](#) |
+| Search overview | As a **shopper**  I want to be able to **easily overview what I've searched for & the number of the results** so that I can **quickly decide whether the product I want is available** |![screenshot](#) |
+| Select quantity | As a **shopper**  I want to be able to **select the quantity of a product when purchasing it** so that I can **ensure I don't accidentally select the wrong product or quantity** |![screenshot](#) |
+| View bag items | As a **shopper**  I want to be able to **view my bag items** so that I can **identify the total cost of my purchase and all items I will receive** |![screenshot](#) |
+| Adjust quantity of specific items | As a **shopper**  I want to be able to **adjust the quantity of specific items in my bag** so that I can **easily make changes to my purchase before checkout** |![screenshot](#) |
+| Enter payment information | As a **shopper**  I want to be able to **easily enter my payment information** so that I can **checkout effectively** |![screenshot](#) |
+| Secure information | As a **shopper** I want to be able to **feel my personal & payment info is safe & secure** so that I can **confidently provide the information needed for the purchase** |![screenshot](#) |
+| Order confirmation | As a **shopper** I want to be able to **view an order confirmation after checkout** so that I can **verify that I haven't made mistakes** |![screenshot](#) |
+| Add a product | As a **store owner** I want to be able to **add a product** so that I can **add new items to my store** |![screenshot](#) |
+| Update a product | As a **store owner** I want to be able to **update a product** so that I can **change product prices, descriptions, images & other criteria** |![screenshot](#) |
+| Delete a product | As a **store owner** I want to be able to **delete a product** so that I can **remove items that are no longer for sale** |![screenshot](#) |
+| Subscribe to newsletter | As a **site user** I want to be able to **subscribe to a newsletter by providing my email address** so that I can **get updates about new products** |![screenshot](#) |
+| Manage subscriber list | As a **site admin** I want to be able to **view and manage the list of newsletter subscribers** so that I can **send newsletters periodically** |![screenshot](#) |
+| View FAQs list | As a **site user** I want to be able to **view a list of FAQs grouped by categories** so that I can **more easily find answers to my questions** |![screenshot](#) |
+| Add FAQs list | As a **site admin** I want to be able to **add new FAQs** so that I can **follow up questions from customers** |![screenshot](#) |
+| Update FAQs list | As a **site admin** I want to be able to **edit existing FAQs** so that I can **keep the section up to date** |![screenshot](#) |
+| Delete FAQs list | As a **site admin** I want to be able to **delete FAQs** so that I can **remove questions that are no longer for relevant** |![screenshot](#) |
 
 - - -
 
