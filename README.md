@@ -394,7 +394,7 @@ class Newsletter(models.Model):
     - Order summary with: Order details, Delivery details, Billing info
     - Markering section: 
         - "What's Next?" button for returning back to the main Products page
-        - Planting Tips section with external links
+        - Planting Tips section
         - Link to the FAQ page
         - Link to the Newsletter page 
     
@@ -404,6 +404,50 @@ class Newsletter(models.Model):
     ![post detail page](documentation/readme/existing-feat/sesp-feat-018.png)
     </details>
 
+> **About Us Page**
+- This page has the same content for all users (admin, registered & non-registered users).
+- It consists of 4 main sections: 
+    - Info text about the background of the shop.
+    - Contact Us section consisting of a contact form. 
+    - "Subscribe to Our Newsletter" section: the user can enter their email & subscribe to the company's newsletter.
+    - External links section with gardening resources: two external links
+    
+    <details>
+    <summary>Click to see a page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-019.png)
+    </details>
+
+> **FAQs Page**
+- This page has a slightly different content depending on the authentication status of the user.
+- The **general common features** for all users regardless auth status are:
+    - You can see relevant questions, grouped by category
+    - You can toggle down each question to read the respective answer.
+    - You can see the creation & last updated dates for each question.
+
+    <details>
+    <summary>Click to see a page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-020.png)
+    </details>
+
+- As a **site admin**, you have access to the above mentioned features. The **additional** ones are:
+    - You can see an "Add New FAQ" button at the top of the page.
+    - When toggling down a question, you can see the "Edit" & "Delete" buttons
+    - You can thus create, update & delete faqs.
+
+    <details>
+    <summary>Click to see a page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-021.png)
+    </details>
+
+
+> **404 Page**
+- This page has the same content for all users (admin, registered & non-registered users).
+- The HTTP 404, 404 not found, 404, 404 error, page not found, or file not found error message is a hypertext transfer protocol standard response code, to indicate that the browser was able to communicate with a given server, but the server could not find what was requested by the user.
+    
+![screenshot](documentation/readme/existing-feat/sesp-feat-022.png)
 
 ### Future Features
 - - -
