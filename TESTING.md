@@ -462,6 +462,34 @@ Here's a table for testing the various user stories of the project. The aim is t
 - - -
 
 ### Defensive Programming
+#### Navigation Menu
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Sign In Link | Yes | Click on "Login" from the dropdown menu | User is redirected to the Sign In page, displaying the Sign In form & Home & Sign In buttons. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-003.png)|
+| Sign Up Link | Yes | Click on "Register" from the dropdown menu | User is redirected to the Sign Up page, displaying the Sign Up form, Back to Login & Create Account Buttons. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-004.png)|
+| Sign Out Link | Yes | Click on "Logout" from the dropdown menu | User is redirected to the Sign Out page, displaying the Sign Out & Cancel button. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-001.png)|
+| My Profile | Yes | Click on "My Profile" from the dropdown menu | User is redirected to the Profile page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-002.png)|
+| All Products Link | Yes | Click on "All Products" in the navigation bar | User is redirected to the main Products page, displaying the list of products. | Pass |![screenshot](#)|
+| All Products/By Price Link | Yes | Click on "All Products/By Price" in the navigation bar | User is redirected to the main Products page, displaying the list of products sorted by price. | Pass |![screenshot](#)|
+| All Products/By Rating Link | Yes | Click on "All Products/By Rating" in the navigation bar | User is redirected to the main Products page, displaying the list of products sorted by rating. | Pass |![screenshot](#)|
+| Vegetables Link | Yes | Click on "Vegetables/All Vegetable seeds" in the navigation bar | User is redirected to the main Products page, displaying only vegetable seed products. | Pass |![screenshot](#)|
+| Vegetables Link/By Name | Yes | Click on "Vegetables/By Name" in the navigation bar | User is redirected to the main Products page, displaying only vegetable seed products sorted by name. | Pass |![screenshot](#)|
+| Vegetables Link/By Sowing Season | Yes | Click on "Vegetables/By Sowing Season" in the navigation bar | User is redirected to the main Products page, displaying only vegetable seed products sorted by sowing Season. | Pass |![screenshot](#)|
+| Vegetables Link/By Harvest Season | Yes | Click on "Vegetables/By Harvest Season" in the navigation bar | User is redirected to the main Products page, displaying only vegetable seed products sorted by harvest Season. | Pass |![screenshot](#)|
+| Herbs Link | Yes | Click on "Herbs/All Herb seeds" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products. | Pass |![screenshot](#)|
+| Herbs Link/By Name | Yes | Click on "Herbs/By Name" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by name. | Pass |![screenshot](#)|
+| Herbs Link/By Lifespan | Yes | Click on "Herbs/By Lifespan" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by lifespan. | Pass |![screenshot](#)|
+| Herbs Link/Sowing Season | Yes | Click on "Herbs/Sowing Season" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by sowing Season. | Pass |![screenshot](#)|
+| Flowers Link | Yes | Click on "Flowers/All Flower seeds" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products. | Pass |![screenshot](#)|
+| Flowers Link/By Name | Yes | Click on "Flowers/By Name" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products sorted by name. | Pass |![screenshot](#)|
+| Flowers Link/By Lifespan | Yes | Click on "Flowers/By Lifespan" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products sorted by lifespan. | Pass |![screenshot](#)|
+| Flowers Link/By Sowing Season | Yes | Click on "Flowers/By Sowing Season" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products sorted by sowing Season. | Pass |![screenshot](#)|
+| Garden Supplies Link | Yes | Click on "Garden Supplies/All Garden Supplies" in the navigation bar | User is redirected to the main Products page, displaying only garden supplies products. | Pass |![screenshot](#)|
+| Garden Supplies Link/By Category | Yes | Click on "Garden Supplies/By Category" in the navigation bar | User is redirected to the main Products page, displaying only garden supplies products sorted by category. | Pass |![screenshot](#)|
+| FAQS Link | Yes | Click on "FAQS" in the navigation bar | User is redirected to the FAQS page. | Pass |![screenshot](#)|
+| About us Link | Yes | Click on "About us" in the navigation bar | User is redirected to the About page. | Pass |![screenshot](#)|
+| Categories Link | Yes | Click on "Categories" in the navigation bar | User is redirected to the Categories page. | Pass |![screenshot](#)|
+
 
 
 - - -
@@ -469,3 +497,4 @@ Here's a table for testing the various user stories of the project. The aim is t
 ### Bugs
 I am not sure if these can be identified as a bugs, but wanted to document them here in order to avoid confusion:
 - On product detail page, the decrement button only starts working normally after entering a value manually. 
+- Some of the fullsize screenshots for docmenting the features show the footer, or the free shipping banner where they shouldn't be. This is I guess a result of the fullsize screenshot function and should not be seen as mulfunctioning. The pages work as expexted.
