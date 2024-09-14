@@ -114,9 +114,9 @@ Page | Screenshot | Notes |
 | **Products edit page** | ![screenshot](documentation/testing/validation/val-html-products_edit.png) | Passed. No warnings or errors |
 | **Products delete page** | ![screenshot](documentation/testing/validation/val-html-products_delete.png) | Passed. No warnings or errors |
 | **Products detail page** | ![screenshot](documentation/testing/validation/val-html-products_detail.png) | Passed. No warnings or errors |
-| **Bag page** | ![screenshot](#) | Passed. No warnings or errors |
-| **Checkout page** | ![screenshot](#) | Passed. No warnings or errors |
-| **Checkout success page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Bag page** | ![screenshot](documentation/testing/validation/val-html-bag.png) | Passed. No warnings or errors |
+| **Checkout page** | ![screenshot](documentation/testing/validation/val-html-checkout.png) | Passed. 1 warning, no errors |
+| **Checkout success page** | ![screenshot](documentation/testing/validation/val-html-checkout_success.png) | Passed. No warnings or errors |
 | **Faqs page** | ![screenshot](documentation/testing/validation/val-html-faqs.png) | Passed. No warnings or errors |
 | **Faqs add page** | ![screenshot](documentation/testing/validation/val-html-faqs_add.png) | Passed. No warnings or errors |
 | **Faqs edit page** | ![screenshot](documentation/testing/validation/val-html-faqs_edit.png) | Passed. No warnings or errors |
