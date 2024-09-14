@@ -451,11 +451,14 @@ class Newsletter(models.Model):
 
 ### Future Features
 
-- FAQs search functionality: I would like to make it possible to search through the various FAQs and filter/sort them similarly to the Products.
-- Related Products: In the Products Detail Page, I would like to make it possible to show related products below the main picture of the specific products.
-- More detailed pictures: In the Products Detail Page, I would like to make it possible to show more than just one main product page, so that the user gets a better understanding of the product as a whole. Example: images of the seed bags, back and forth & more precise images of the seeds
-- Show only the last updated date for the FAQs: when the creation & updated date are equal, I would only like to show the updated one.
-- Add product page: I would like to show only the relevant fields depending on the product, e.g the Gardening supplies shouldn't need all the seed information.
+> FAQs
+- **Search functionality**: I would like to make it possible to search through the various FAQs and filter/sort them similarly to the Products.
+- **Last update**: Show only the last updated date for the FAQs when the creation & updated date are equal.
+
+> Products
+- **Related Products**: In the Products Detail Page, I would like to make it possible to show related products below the main picture of the specific products.
+- **More detailed pictures**: In the Products Detail Page, I would like to make it possible to show more than just one main product image, so that the user gets a better understanding of the product as a whole. Example: images of the seed bags, back and forth & more precise images of the seeds
+- **Add product page**: I would like to show only the relevant fields depending on the product, e.g the Gardening supplies shouldn't need all the seed information.
 
 - - -
 
