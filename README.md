@@ -321,6 +321,35 @@ class Newsletter(models.Model):
     ![post detail page](documentation/readme/existing-feat/sesp-feat-012.png)
     </details>
 
+> **Products Detail Page**
+- This page has a slightly different content depending on the authentication status of the user.
+- The **general common features** for all users regardless auth status are:
+    - You can see the Products Detail Page consisting of 3 main columns: 
+        - Product image section
+        - Product name (& botanical name if related), category, rating, description, quantity & add-to-cart section
+        - More specific product information section 
+        name, price, category, rating and a "More Info" button that leads to the Product's detail page.
+    - There is a "Add to Bag" button to move the product to the basket.
+    - There are "plus" & "minus" buttons to adjust the quantity of the specific product.
+    - There is a "Keep Shopping" button to return to the main Products page.
+    
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-013.png)
+    </details>
+
+- As a **site admin**, you have access to the above mentioned features. Similarly to the main Products Page, the **additional** ones are:
+    - You can see the "Edit" & "Delete" buttons.
+    - You can thus create, update & delete products.
+
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-014.png)
+    </details>
+
+
 ### Future Features
 - - -
 
