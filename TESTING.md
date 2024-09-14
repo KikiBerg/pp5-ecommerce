@@ -512,9 +512,8 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Decrement button | Yes | Click on the decrement button | The quantity decreases | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-030.png)|
 | Keep Shopping button | Yes | Click on the "Keep Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-031.png)|
 | Add To Bag button | Yes | Click on the "Add To Bag" button | You get directed to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-032.png)|
-
-
-
+| Success Message upon adding to bag | Yes | Click on the "Add To Bag" button | You get a Success Message with summed up info for your current basket | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-033.png)|
+| Checkout link on success message | Yes | Click on the "Checkout" button | You get directed to the Bag Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-034.png)|
 
 - - -
 
