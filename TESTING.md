@@ -380,10 +380,22 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 I have tested my deployed project on two different browsers to check for compatibility issues. I could not find any issues.
 
-|  Browser | Links  | Pages  | Responsivnes  | Form fields  |
+|  Browser | Links | Pages | Responsiveness | Form fields |
 | --- | --- | --- | --- | --- |
 |  Chrome | Works as expected  |  Loading pages no issue | Responsivness works as expected  | Works as expected  |
 |  Edge |  Works as expected | Loading pages no issue  | Responsivness works as expected  |  Works as expected |
+
+<details>
+<summary>Chrome</summary>
+    
+![chrome](documentation/testing/browser/sesp-chrome.png)
+</details>
+
+<details>
+<summary>Edge</summary>
+    
+![edge](documentation/testing/browser/sesp-edge.png)
+</details>
 
 - - -
 
