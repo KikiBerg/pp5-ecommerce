@@ -502,6 +502,20 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Scroll-to-top button | Yes | Scroll further down the products page | Scroll-to-top button appears & by clicking you're directed back to the top of the page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-027.png)|
 | More Info Button | Yes | Click the "More Info" button | You're directed to the Products Detail Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-028.png)|
 
+#### Products Detail Page
+
+*NOTE!* The decrement button only starts working normally after entering a value manually. This is identified as a bug.
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Increment button | Yes | Click on the increment button | The quantity increases | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-029.png)|
+| Decrement button | Yes | Click on the decrement button | The quantity decreases | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-030.png)|
+| Keep Shopping button | Yes | Click on the "Keep Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-031.png)|
+| Add To Bag button | Yes | Click on the "Add To Bag" button | You get directed to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-032.png)|
+
+
+
+
 - - -
 
 ### Bugs
