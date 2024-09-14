@@ -349,6 +349,45 @@ class Newsletter(models.Model):
     ![post detail page](documentation/readme/existing-feat/sesp-feat-014.png)
     </details>
 
+> **Bag Page**
+- This page has the same content for all users (admin, registered & non-registered users).
+- It consists of 3 main sections: 
+    - one showing the products added to the basket, with image, sku nr, price, subtotal price, updating - removing product icons & quantity buttons
+    - one with the amount details: Bag total, Delivery cost & Grand total.
+    - at the bottom there are two buttons "Keep shopping" & "Checkout"; for either going back to main Products page or continuing to the Checkout page.
+    - there is also an informative text om the amount remaining for reaching the free shipping.
+    
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-015.png)
+    </details>
+
+> **Checkout Page**
+- This page has a slightly different content depending on the authentication status of the user.
+- The **general common features** for all users regardless auth status are:
+    - You can see the Checkout Page consisting of 2 main columns: 
+        - ORDER SUMMARY: with product image, quantity, subtotal, order total, shipping cost, grand total.
+        - CUSTOMER INFORMATION: a form consisting of Customer details, Delivery information & Payment details.        
+    - There is a "Adjust Bag" button to return to the Bag page and make adjustments if necessary.
+    - There is a "Complete Order" button to continue to the Checkout Success page.
+    - There is an informative text about the amount going to be deducted from the card. 
+    
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-016.png)
+    </details>
+
+- As a **registered user** or **site admin**, you have access to the above mentioned features. The **additional** ones are:
+    - You can see your Delivery info prefilled, as a result of being a registered user and having chosen to "Save delivery information to profile"    
+
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-017.png)
+    </details>
+
 
 ### Future Features
 - - -
