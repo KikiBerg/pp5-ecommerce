@@ -585,6 +585,14 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Newsletter Subscribe Existing Email | Yes | Fill out the same email & click on the "Subscribe" button | You get a text "Newsletter with this Email already exists." | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-069.png)|
 | External Links | Yes | Click on the two Gardening Resources buttons | The pages open in new tabs | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-071.png)|
 
+
+#### Footer
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Social Links | Yes | Click on the Social Links buttons | The pages open in new tabs | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-072.png)|
+
+
 - - -
 
 ### Bugs
