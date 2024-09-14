@@ -492,6 +492,7 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 #### Products Page
 
+*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
 *NOTE!* For the sorting feature I have taken screenshots of only 1 type of sorting, but have tested all 8 of them and they work as expected.
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
@@ -502,8 +503,10 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Scroll-to-top button | Yes | Scroll further down the products page | Scroll-to-top button appears & by clicking you're directed back to the top of the page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-027.png)|
 | More Info Button | Yes | Click the "More Info" button | You're directed to the Products Detail Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-028.png)|
 
+
 #### Products Detail Page
 
+*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
 *NOTE!* The decrement button only starts working normally after entering a value manually. This is identified as a bug.
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
@@ -532,7 +535,7 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
-| Order Summary | Yes | none | See a Summary of your last Order | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-046.png)|
+| Order Summary | Yes | None | See a Summary of your last Order | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-046.png)|
 | Fill out CUSTOMER INFORMATION | Yes | Fill out all the necessary Customer Information | The checkout form is filled | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-043.png)|
 | Fill out Card Details | Yes | Fill out 4242 4242 4242 4242 card nr random date, cvc & zip numbers | The payment form is filled | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-044.png)|
 | Adjust Bag button | Yes | Click on the "Adjust Bag" button | You get redirected back to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-045.png)|
@@ -542,12 +545,26 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
-| Checkout success message | Yes | none | You get a Success Message with Order Number & info about Emain confirmation | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-048.png)|
+| Checkout success message | Yes | None | You get a Success Message with Order Number & info about Emain confirmation | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-048.png)|
 | Continue Shopping | Yes | Click on the "Continue Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-049.png)|
 | Visit FAQ | Yes | Click on the "Visit FAQ" button | You get redirected to the FAQs page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-050.png)|
 | Subscribe to Our Newsletter | Yes | Click on the Arrow-to-the-right button | You get redirected to the Newsletter page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-051.png)|
 
+#### FAQ Page
 
+*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Add New FAQ | Yes | Click on the "Add New FAQ" button | You get directed to the Add FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-052.png)|
+| Add New FAQ | Yes | Create a new FAQ & click on the "Save" button | You get directed to the main FAQ page & the new FAQ is added. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-055.png)|
+| Add New FAQ Success Message | Yes | None | You get directed to the main FAQ page & the new FAQ is added. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-056.png)|
+| Edit FAQ | Yes | Click on the "Edit" button | You get directed to the Edit FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-053.png)|
+| Edit FAQ | Yes | Edit a FAQ & Click the "Review changes" button | You get directed to the Edit/Review changes FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-057.png)|
+| Edit/Review FAQ | Yes | Review the changes & click on the "Confirm Changes" button | You get directed to the Edit FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-058.png)|
+| Delete FAQ | Yes | Click on the "Delete" button | You get directed to the Delete FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-054.png)|
+| Delete FAQ | Yes | Click on the "Yes, Delete" button | The FAQ is removed & you get directed to the main FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-054.png)|
+| Delete FAQ Success Message | Yes | None | You get directed to the main FAQ page & the last FAQ is now removed. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-059.png)|
 
 - - -
 
