@@ -110,14 +110,14 @@ Page | Screenshot | Notes |
 | --- | --- | --- |
 | **Homepage** | ![screenshot](documentation/testing/validation/val-html-home.png) | Passed. No warnings or errors |
 | **Products page** | ![screenshot](documentation/testing/validation/val-html-products.png) | Passed. No warnings or errors |
-| **Products add page** | ![screenshot](documentation/testing/validation/val-html-products_add.png) | The functionality here is aligned to the walkthrough. I went through the code & tried to locate that but I could not find this "id_name" |
+| **Products add page** | ![screenshot](documentation/testing/validation/val-html-products_add.png) | Passed. No warnings or errors |
 | **Products edit page** | ![screenshot](documentation/testing/validation/val-html-products_edit.png) | Passed. No warnings or errors |
 | **Products delete page** | ![screenshot](documentation/testing/validation/val-html-products_delete.png) | Passed. No warnings or errors |
 | **Products detail page** | ![screenshot](documentation/testing/validation/val-html-products_detail.png) | Passed. No warnings or errors |
 | **Bag page** | ![screenshot](#) | Passed. No warnings or errors |
 | **Checkout page** | ![screenshot](#) | Passed. No warnings or errors |
 | **Checkout success page** | ![screenshot](#) | Passed. No warnings or errors |
-| **Faqs page** | ![screenshot](#) | Passed. No warnings or errors |
+| **Faqs page** | ![screenshot](documentation/testing/validation/val-html-faqs.png) | Passed. No warnings or errors |
 | **Faqs add page** | ![screenshot](documentation/testing/validation/val-html-faqs_add.png) | Passed. No warnings or errors |
 | **Faqs edit page** | ![screenshot](documentation/testing/validation/val-html-faqs_edit.png) | Passed. No warnings or errors |
 | **Faqs delete page** | ![screenshot](documentation/testing/validation/val-html-faqs_delete.png) | Passed. No warnings or errors |
