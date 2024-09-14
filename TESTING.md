@@ -538,6 +538,16 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Adjust Bag button | Yes | Click on the "Adjust Bag" button | You get redirected back to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-045.png)|
 | Complete Order button | Yes | Click on the "Complete Order" button | You see the process spinning icon & get directed to the Checkout Success page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-047.png)|
 
+#### Checkout Success Page
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Checkout success message | Yes | none | You get a Success Message with Order Number & info about Emain confirmation | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-048.png)|
+| Continue Shopping | Yes | Click on the "Continue Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-049.png)|
+| Visit FAQ | Yes | Click on the "Visit FAQ" button | You get redirected to the FAQs page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-050.png)|
+| Subscribe to Our Newsletter | Yes | Click on the Arrow-to-the-right button | You get redirected to the Newsletter page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-051.png)|
+
+
 
 - - -
 
