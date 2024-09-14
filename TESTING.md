@@ -502,6 +502,12 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Showing nr or products | Yes | Click on a random link, e.g. Vegetables/ By Name | The number of products showing is refreshed accordingly | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-026.png)|
 | Scroll-to-top button | Yes | Scroll further down the products page | Scroll-to-top button appears & by clicking you're directed back to the top of the page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-027.png)|
 | More Info Button | Yes | Click the "More Info" button | You're directed to the Products Detail Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-028.png)|
+| Add New Product | Yes | Click on "My Account/Product Management/" | You get directed to the Add Product page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-060.png)|
+| Add New Product Success Message | Yes | Fill out necessary info & click on "Add Product" button | You get directed to the main Products page & the new product is added. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-061.png)|
+| Edit Product | Yes | Click on the "Edit" button | You get directed to the Edit Product page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-062.png)|
+| Edit Product Success Message | Yes | Make the necessary changes & click on "Confirm Changes" button | You get directed to the main Products page & the product is updated. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-063.png)|
+| Delete Product | Yes | Click on the "Delete" button | You get directed to the Delete Product page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-064.png)|
+| Delete Product Success Message | Yes | Click on "Confirm Changes" button | You get directed to the main Products page & product is now removed | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-065.png)|
 
 
 #### Products Detail Page
