@@ -216,7 +216,7 @@ Creating a strong social base (with participation) and linking that to the busin
 I've created a mockup Facebook business account using the [Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
 provided by Code Institute.
 
-![screenshot](documentation/mockup-facebook.png)
+![screenshot](documentation/readme/wireframes/sesp-fb.png)
 
 ### Newsletter Marketing
 
