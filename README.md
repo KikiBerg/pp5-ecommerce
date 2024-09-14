@@ -236,6 +236,24 @@ class Newsletter(models.Model):
 ## Features
 
 ### Existing Features
+> **Register & Login**
+- These features are placed separately to the right side of the navigation bar for easier orientation. There is a dropdown menu for choosing to either register or login.
+- Depending on whether the user has already an account or not, they should either register or login. By clicking on either the "Register" or the "Login" button, they are respectively redirected to the register or login form pages. 
+- If wanting to register, the user is asked to enter a valid email adress, a username & a password. Upon registering the user is informed that they have been mailed a link which they need to click so that they can confirm their registration.
+- If already registered and want to login, the user is asked to enter their email or username & their password. When signed in, they get a success message for that.
+![screenshot](documentation/readme/existing-feat/sesp-feat-001.png)
+![screenshot](documentation/readme/existing-feat/sesp-feat-002.png)
+
+> **Logout**
+- In case the user wants to logout they will be asked to confirm that decision.
+- If they click on the "Sign Out" button they will be signed out.
+- If they click on the "Cancel" button they will be redirected to the Homepage.
+![screenshot](documentation/readme/existing-feat/sesp-feat-003.png)
+
+> **Navigation Bar**
+- The navigation bar ensures convenient access to all site areas, adapts to various display resolutions, and incorporates user authentication features as documented right above (Sign In, Sign Up). It consists of the three main pages, Posts - About us - Categories
+![screenshot](documentation/readme/existing-features/feat005.png)
+![screenshot](documentation/readme/existing-features/feat006.png)
 
 ### Future Features
 - - -
