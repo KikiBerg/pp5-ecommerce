@@ -241,19 +241,37 @@ class Newsletter(models.Model):
 - Depending on whether the user has already an account or not, they should either register or login. By clicking on either the "Register" or the "Login" button, they are respectively redirected to the register or login form pages. 
 - If wanting to register, the user is asked to enter a valid email adress, a username & a password. Upon registering the user is informed that they have been mailed a link which they need to click so that they can confirm their registration.
 - If already registered and want to login, the user is asked to enter their email or username & their password. When signed in, they get a success message for that.
+
 ![screenshot](documentation/readme/existing-feat/sesp-feat-001.png)
+
 ![screenshot](documentation/readme/existing-feat/sesp-feat-002.png)
+
 
 > **Logout**
 - In case the user wants to logout they will be asked to confirm that decision.
 - If they click on the "Sign Out" button they will be signed out.
 - If they click on the "Cancel" button they will be redirected to the Homepage.
+
 ![screenshot](documentation/readme/existing-feat/sesp-feat-003.png)
 
+> **Personal Profile**
+- When logged in, the user has access to their personal profile page.
+- When clicking on the "My Profile" button (existing in the "My Account" icon), the user is directed to their profile page which consists of the two "Default Delivery Information" & "Order History" forms.
+- The user can there update their delivery information & can see the detailed orders by clicking on the Order link.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-006.png)
+
 > **Navigation Bar**
-- The navigation bar ensures convenient access to all site areas, adapts to various display resolutions, and incorporates user authentication features as documented right above (Sign In, Sign Up). It consists of the three main pages, Posts - About us - Categories
-![screenshot](documentation/readme/existing-features/feat005.png)
-![screenshot](documentation/readme/existing-features/feat006.png)
+- The navigation bar ensures convenient access to all site areas, adapts to various display resolutions, and incorporates user authentication features as documented right above (Register, Login, Logout). It consists of the seven main pages, All Products - Vegetables - Herbs - Flowers - Garden Supplies - Faqs - About Us
+- The All Products, Vegetables, Herbs, Flowers & Garden Supplies pages have dropdown menus, that redirect the user to specifically categorized pages.
+- There are facing-down arrows for these pages, so as to make sure that the user is not missing that feature.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-004.png)
+
+> **Search Bar**
+- The Search Bar ensures fast and convenient filtering of products so that the user can easily access the wanted procuts.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-005.png)
 
 ### Future Features
 - - -
