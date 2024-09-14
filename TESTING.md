@@ -515,6 +515,20 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Success Message upon adding to bag | Yes | Click on the "Add To Bag" button | You get a Success Message with summed up info for your current basket | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-033.png)|
 | Checkout link on success message | Yes | Click on the "Checkout" button | You get directed to the Bag Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-034.png)|
 
+#### Bag Page
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Increment button | Yes | Click on the increment button | The quantity increases | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-035.png)|
+| Decrement button | Yes | Click on the decrement button | The quantity decreases | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-036.png)|
+| Update button | Yes | Click on the Update icon upon changing the quantity | The basket is refreshed accordingly & the relevant success message appears | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-037.png)|
+| Remove button | Yes | Click on the Rubbish icon upon | The item is removed & the relevant success message appears | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-038.png)|
+| Continue Shopping | Yes | Click on the "Continue Shopping" button after emptying the basket| You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-039.png)|
+| Totals | Yes | Add/Remove products or increase/decrease quantity of products | The Bag total, Deliver cost & Grand Total are updated accordingly | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-040.png)|
+| Keep Shopping button | Yes | Click on the "Keep Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-041.png)|
+| Checkout button  | Yes | Click on the "Checkout" button | You get directed to the Checkout Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-042.png)|
+
+
 - - -
 
 ### Bugs
