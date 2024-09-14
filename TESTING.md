@@ -575,6 +575,16 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Delete FAQ | Yes | Click on the "Yes, Delete" button | The FAQ is removed & you get directed to the main FAQ page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-054.png)|
 | Delete FAQ Success Message | Yes | None | You get directed to the main FAQ page & the last FAQ is now removed. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-059.png)|
 
+
+#### About Page
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Contact Form Success Message | Yes | Fill out the Contact form & click on the "Send Message" button | You get a Success message "Your message has been sent!" | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-068.png)|
+| Newsletter Subscribe Success Message | Yes | Fill out your email & click on the "Subscribe" button | You get a Success message "You have successfully subscribed to our newsletter!" | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-070.png)|
+| Newsletter Subscribe Existing Email | Yes | Fill out the same email & click on the "Subscribe" button | You get a text "Newsletter with this Email already exists." | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-069.png)|
+| External Links | Yes | Click on the two Gardening Resources buttons | The pages open in new tabs | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-071.png)|
+
 - - -
 
 ### Bugs
