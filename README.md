@@ -261,6 +261,19 @@ class Newsletter(models.Model):
 
 ![screenshot](documentation/readme/existing-feat/sesp-feat-006.png)
 
+- As a **site admin**, you have access to the above mentioned features. The **additional** ones are:
+    - You can see the "Product Management" button.
+
+    ![screenshot](documentation/readme/existing-feat/sesp-feat-011.png)
+    
+> **Basket**
+- To the right of the "My Account" icon, there is a "Basket" icon which shows the current spending amount.
+- When clicking on it the user is directed to their Bag page.
+- If the basket is empty the amount shows 0 and there's an informative text with a button for returning to the Products page.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-008.png)
+
+
 > **Navigation Bar**
 - The navigation bar ensures convenient access to all site areas, adapts to various display resolutions, and incorporates user authentication features as documented right above (Register, Login, Logout). It consists of the seven main pages, All Products - Vegetables - Herbs - Flowers - Garden Supplies - Faqs - About Us
 - The All Products, Vegetables, Herbs, Flowers & Garden Supplies pages have dropdown menus, that redirect the user to specifically categorized pages.
@@ -272,6 +285,41 @@ class Newsletter(models.Model):
 - The Search Bar ensures fast and convenient filtering of products so that the user can easily access the wanted procuts.
 
 ![screenshot](documentation/readme/existing-feat/sesp-feat-005.png)
+
+> **Free shipping banner**
+- Below the main Navigation bar there is an info banner about the cost limit upon which the shipping on seed orders is for free.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-007.png)
+
+> **Home Page**
+- The Home page is minimalistic and exists of a Hero background image, an informative title and a "Make your order now" button directing to the Products page.
+
+![screenshot](documentation/readme/existing-feat/sesp-feat-009.png)
+
+> **Products Page**
+- This page has a slightly different content depending on the authentication status of the user.
+- The **general common features** for all users regardless auth status are:
+    - You can see the Products Page consisting of product rows, where each product is represented by image, name, price, category, rating and a "More Info" button that leads to the Product's detail page.
+    - You can use a scroll-to-top button, that helps the user scroll quickly to the top of the page.
+    - You can use the sorting bar at the top of the page, for easier product filtering.
+    - If you have used this filtering feature, you can click on the "back to All Products" button, in order to return to the initial status of the page. 
+    - You can get information about the amount of the current products shown depending on the filtering.
+
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-010.png)
+    </details>
+
+- As a **site admin**, you have access to the above mentioned features. The **additional** ones are:
+    - You can see the "Edit" & "Delete" buttons.
+    - You can thus create, update & delete products.
+
+    <details>
+    <summary>Click to see a whole product page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-012.png)
+    </details>
 
 ### Future Features
 - - -
