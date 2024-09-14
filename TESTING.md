@@ -532,7 +532,11 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
-
+| Order Summary | Yes | none | See a Summary of your last Order | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-046.png)|
+| Fill out CUSTOMER INFORMATION | Yes | Fill out all the necessary Customer Information | The checkout form is filled | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-043.png)|
+| Fill out Card Details | Yes | Fill out 4242 4242 4242 4242 card nr random date, cvc & zip numbers | The payment form is filled | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-044.png)|
+| Adjust Bag button | Yes | Click on the "Adjust Bag" button | You get redirected back to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-045.png)|
+| Complete Order button | Yes | Click on the "Complete Order" button | You see the process spinning icon & get directed to the Checkout Success page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-047.png)|
 
 
 - - -
