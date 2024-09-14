@@ -492,8 +492,8 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 #### Products Page
 
-*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
-*NOTE!* For the sorting feature I have taken screenshots of only 1 type of sorting, but have tested all 8 of them and they work as expected.
+- **NOTE!** The CRUD functionality described in some of the features here is only accesible if logged in as admin
+- **NOTE!** For the sorting feature I have taken screenshots of only 1 type of sorting, but have tested all 8 of them and they work as expected.
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
@@ -512,8 +512,8 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 #### Products Detail Page
 
-*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
-*NOTE!* The decrement button only starts working normally after entering a value manually. This is identified as a bug.
+- **NOTE!** The CRUD functionality described in some of the features here is only accesible if logged in as admin
+- **NOTE!** The decrement button only starts working normally after entering a value manually. This is identified as a bug.
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
@@ -523,6 +523,9 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Add To Bag button | Yes | Click on the "Add To Bag" button | You get directed to the Bag page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-032.png)|
 | Success Message upon adding to bag | Yes | Click on the "Add To Bag" button | You get a Success Message with summed up info for your current basket | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-033.png)|
 | Checkout link on success message | Yes | Click on the "Checkout" button | You get directed to the Bag Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-034.png)|
+| Edit Product | Yes | Click on the "Edit" button | You get directed to the Edit Product page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-066.png)|
+| Delete Product | Yes | Click on the "Delete" button | You get directed to the Delete Product page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-066.png)|
+
 
 #### Bag Page
 
@@ -558,7 +561,7 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 #### FAQ Page
 
-*NOTE!* The CRUD functionality described in some of the features here is only accesible if logged in as admin
+- **NOTE!** The CRUD functionality described in some of the features here is only accesible if logged in as admin
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
