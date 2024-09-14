@@ -462,6 +462,7 @@ Here's a table for testing the various user stories of the project. The aim is t
 - - -
 
 ### Defensive Programming
+
 #### Navigation Menu
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
@@ -480,7 +481,6 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Herbs Link/By Name | Yes | Click on "Herbs/By Name" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by name. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-013.png)|
 | Herbs Link/By Lifespan | Yes | Click on "Herbs/By Lifespan" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by lifespan. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-014.png)|
 | Herbs Link/Sowing Season | Yes | Click on "Herbs/Sowing Season" in the navigation bar | User is redirected to the main Products page, displaying only herb seed products sorted by sowing Season. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-015.png)|
-
 | Flowers Link | Yes | Click on "Flowers/All Flower seeds" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-016.png)|
 | Flowers Link/By Name | Yes | Click on "Flowers/By Name" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products sorted by name. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-017.png)|
 | Flowers Link/By Lifespan | Yes | Click on "Flowers/By Lifespan" in the navigation bar | User is redirected to the main Products page, displaying only flower seed products sorted by lifespan. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-018.png)|
@@ -489,6 +489,18 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Garden Supplies Link/By Category | Yes | Click on "Garden Supplies/By Category" in the navigation bar | User is redirected to the main Products page, displaying only garden supplies products sorted by category. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-021.png)|
 | FAQS Link | Yes | Click on "FAQS" in the navigation bar | User is redirected to the FAQS page. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-022.png)|
 | About us Link | Yes | Click on "About us" in the navigation bar | User is redirected to the About page. | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-023.png)|
+
+#### Products Page
+
+*NOTE!* For the sorting feature I have taken screenshots of only 1 type of sorting, but have tested all 8 of them and they work as expected.
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Sorting bar | Yes | Click on the various choices to sort accordignly | The products are sorted accordignly | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-024.png)|
+| All Products link | Yes | Click on the All Products link | You are directed back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-025.png)|
+| Showing nr or products | Yes | Click on a random link, e.g. Vegetables/ By Name | The number of products showing is refreshed accordingly | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-026.png)|
+| Scroll-to-top button | Yes | Scroll further down the products page | Scroll-to-top button appears & by clicking you're directed back to the top of the page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-027.png)|
+| More Info Button | Yes | Click the "More Info" button | You're directed to the Products Detail Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-028.png)|
 
 - - -
 
