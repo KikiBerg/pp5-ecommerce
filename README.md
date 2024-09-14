@@ -287,7 +287,7 @@ class Newsletter(models.Model):
 ![screenshot](documentation/readme/existing-feat/sesp-feat-005.png)
 
 > **Free shipping banner**
-- Below the main Navigation bar there is an info banner about the cost limit upon which the shipping on seed orders is for free.
+- Below the main Navigation bar there is an info banner about the cost limit, beyond which the shipping on seed orders is for free.
 
 ![screenshot](documentation/readme/existing-feat/sesp-feat-007.png)
 
@@ -306,7 +306,7 @@ class Newsletter(models.Model):
     - You can get information about the amount of the current products shown depending on the filtering.
 
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-010.png)
     </details>
@@ -316,7 +316,7 @@ class Newsletter(models.Model):
     - You can thus create, update & delete products.
 
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-012.png)
     </details>
@@ -334,7 +334,7 @@ class Newsletter(models.Model):
     - There is a "Keep Shopping" button to return to the main Products page.
     
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-013.png)
     </details>
@@ -344,7 +344,7 @@ class Newsletter(models.Model):
     - You can thus create, update & delete products.
 
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-014.png)
     </details>
@@ -374,7 +374,7 @@ class Newsletter(models.Model):
     - There is an informative text about the amount going to be deducted from the card. 
     
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-016.png)
     </details>
@@ -383,9 +383,25 @@ class Newsletter(models.Model):
     - You can see your Delivery info prefilled, as a result of being a registered user and having chosen to "Save delivery information to profile"    
 
     <details>
-    <summary>Click to see a whole product page according to this description</summary>
+    <summary>Click to see a page according to this description</summary>
     
     ![post detail page](documentation/readme/existing-feat/sesp-feat-017.png)
+    </details>
+
+> **Checkout Success Page**
+- This page has the same content for all users (admin, registered & non-registered users).
+- It consists of 2 main sections: 
+    - Order summary with: Order details, Delivery details, Billing info
+    - Markering section: 
+        - "What's Next?" button for returning back to the main Products page
+        - Planting Tips section with external links
+        - Link to the FAQ page
+        - Link to the Newsletter page 
+    
+    <details>
+    <summary>Click to see a page according to this description</summary>
+    
+    ![post detail page](documentation/readme/existing-feat/sesp-feat-018.png)
     </details>
 
 
