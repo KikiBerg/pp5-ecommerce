@@ -528,6 +528,12 @@ Here's a table for testing the various user stories of the project. The aim is t
 | Keep Shopping button | Yes | Click on the "Keep Shopping" button | You get redirected back to the main Products page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-041.png)|
 | Checkout button  | Yes | Click on the "Checkout" button | You get directed to the Checkout Page | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-042.png)|
 
+#### Checkout Page
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+
+
 
 - - -
 
