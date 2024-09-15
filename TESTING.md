@@ -607,11 +607,12 @@ Here's a table for testing the various user stories of the project. The aim is t
 
 #### Unauthorized user attempts CRUD 
 
-- **NOTE!** This is an example of what an unauthorized user sees when attempting the CRUD functionality described further above. It applies to **all** CRUD actions, but here I only give an example of what happens with the Products add page.
+- **NOTE!** This is an example of what an unauthorized user sees when attempting the CRUD functionality described further above. It applies to **all** CRUD actions, but here I only give two examples of what happens with the Products Add page & FAQs Delete page.
 
 | Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
 | --- | --- | --- | --- | --- | --- | 
-| Products Add | Yes | Try to open the url: https://seedandsprout-ab1eae7ba537.herokuapp.com/products/edit/1/ | The user is directed to login/ register pages | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-073.png)|
+| Products Add | Yes | As non registered user, try to open the url: https://seedandsprout-ab1eae7ba537.herokuapp.com/products/edit/1/ | The user is directed to login/ register pages | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-073.png)|
+| FAQs Delete | Yes | As registered & logged in user, try to open the url: https://8000-kikiberg-pp5ecommerce-2snke996bz6.ws.codeinstitute-ide.net/faqs/delete/1/ | The user gets a message: "Sorry, only store owners can do that." | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-074.png)|
 
 - - -
 
