@@ -605,6 +605,13 @@ Here's a table for testing the various user stories of the project. The aim is t
 | --- | --- | --- | --- | --- | --- | 
 | Social Links | Yes | Click on the Social Links buttons | The pages open in new tabs | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-072.png)|
 
+#### Unauthorized user attempts CRUD 
+
+- **NOTE!** This is an example of what an unauthorized user sees when attempting the CRUD functionality described further above. It applies to **all** CRUD actions, but here I only give an example of what happens with the Products add page.
+
+| Feature | Tested? | Action | Expected Outcome | Pass/Fail | Screenshots |
+| --- | --- | --- | --- | --- | --- | 
+| Products Add | Yes | Try to open the url: https://seedandsprout-ab1eae7ba537.herokuapp.com/products/edit/1/ | The user is directed to login/ register pages | Pass |![screenshot](documentation/testing/fulltesting/sesp-ft-073.png)|
 
 - - -
 
