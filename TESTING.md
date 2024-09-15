@@ -127,6 +127,7 @@ Page | Screenshot | Notes |
 | **Signup page** | ![screenshot](documentation/testing/validation/val-html-signup.png) | Error: "Element ul not allowed as child of element small in this context." I ignored this error, as it is a known one from the latest versions of allauth |
 | **Signin page** | ![screenshot](documentation/testing/validation/val-html-login.png) | Passed. No warnings or errors |
 | **Signout page** | ![screenshot](documentation/testing/validation/val-html-logout.png) | Passed. No warnings or errors |
+| **404 page** | ![screenshot](documentation/testing/validation/val-html-404.png) | Passed. No warnings or errors |
 
 #### W3C CSS Validator
 
